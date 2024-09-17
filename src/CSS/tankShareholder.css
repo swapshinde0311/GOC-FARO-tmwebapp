@@ -1,0 +1,141 @@
+/* GES-IND Omkar */
+/* Table CSS */
+.tableTank {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+.tableTank th,
+.tableTank td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+}
+
+.tableTank thead th {
+  background-color: #eaeaea;
+  font-weight: bold;
+  text-align: center;
+  color: #404040;
+}
+
+.tableTank tbody td {
+  text-align: center;
+  color: #404040;
+}
+
+.tableTank tfoot td {
+  background-color: #eaeaea;
+  text-align: center;
+  font-weight: bold;
+  text-align: right;
+  color: #404040;
+}
+
+.detailsContainer1 {
+  background-color: #ffffff;
+  margin: 1px 5px 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.detailsContainer1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detailsContainer1 th,
+.detailsContainer1 td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.detailsContainer1 th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.detailsContainer1 input[type="text"] {
+  width: 60px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.detailsContainer1 input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.detailsContainer1 input[type="text"]:hover {
+  border-color: #007bff;
+}
+
+.tankShareholder-footer {
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  color: #404040;
+}
+
+/* Tank Dynamic UI  */
+.tank-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.tank {
+  width: 200px;
+  height: 300px;
+  border: 2.5px solid #000;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .tank-fill {
+  width: 100%;
+   background-color: #f47021; 
+  background-color:var(--tank-fill-color);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  padding-left: 20px;
+} */
+
+.tank-info {
+  margin-top: 10px;
+  padding-left: 2.5rem;
+  text-align: left;
+  font-weight: bold;
+  flex-direction: column;
+}
+.tank-infoVolume{
+  margin-top: -27px;
+  margin-bottom: 120px;
+}
+.tank-capacity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* input[type="range"] {
+  margin-top: 10px;
+} */
+
+

@@ -1,0 +1,691 @@
+html.honeywell-light-theme .sidebar-layout.collapse>.sidebar {
+  width: 3.5rem !important;
+}
+
+html.honeywell-light-theme .sidebar-layout.collapse.no-icons>.sidebar {
+  width: 0 !important;
+}
+
+html.honeywell-light-theme .sidebar-layout.no-icons {
+  overflow-x: hidden !important;
+  background: #fff;
+}
+
+html.honeywell-light-theme .sidebar-layout.no-icons .contentContainer {
+  color: #191919
+}
+
+html.honeywell-light-theme .sidebar-layout.no-icons>.sidebar {
+  position: fixed;
+  width: 80%;
+  min-height: calc(100vh - 101px);
+}
+
+html.honeywell-light-theme .sidebar-layout.no-icons>.sidebar .ui {
+  width: 100%;
+}
+
+html.honeywell-light-theme .sidebar-layout.no-icons>.sidebar .ui.menu .item {
+  border-bottom: 1px solid;
+}
+
+html.honeywell-light-theme .headerContainer {
+  background-color: white;
+  border-bottom: 5px solid #f7f7f7;
+}
+
+html.honeywell-light-theme .detailsContainer {
+  background-color: white;
+}
+
+html.honeywell-light-theme .backButton {
+  background-color: #111010 !important;
+}
+
+html.honeywell-light-theme .dbthroughputPane {
+  background-color: white;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  min-height: 200px;
+}
+
+html.honeywell-light-theme .dbTankPane {
+  background-color: white;
+  min-height: 200px;
+}
+
+html.honeywell-light-theme .dbPaneHeader {
+  background-color: white;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+html.honeywell-light-theme .leaflet-container {
+  background-color: white;
+}
+
+html.honeywell-light-theme .leaflet-bar a {
+  background: rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(0, 0, 0, 0.4);
+}
+
+html.honeywell-light-theme .leaflet-bar a:hover {
+  background: rgb(0, 0, 0, 0.4);
+}
+
+html.honeywell-light-theme .caretLeft {
+  color: #303030;
+}
+
+html.honeywell-light-theme .mapCountry {
+  stroke: #9e9e9e;
+  fill: #cccccc;
+}
+
+html.honeywell-light-theme .leaflet-popup-content {
+  background-color: white;
+}
+
+html.honeywell-light-theme .leaflet-popup-content-wrapper {
+  background-color: white;
+}
+
+html.honeywell-light-theme .color-picker-input .ui.input-label {
+  background: white;
+}
+
+html.honeywell-light-theme .leaflet-popup-content-wrapper,
+html.honeywell-light-theme .leaflet-popup-tip {
+  background: white;
+  color: #303030;
+  box-shadow: 0 3px 14px rgb(0 0 0 / 40%);
+}
+
+html.honeywell-light-theme .tpiMotPane {
+  background-color: white;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+html.honeywell-light-theme .tpiMOTType {
+  color: #808080;
+}
+
+html.honeywell-light-theme .tpiSelectedMotPane {
+  background-color: #e0e0e0;
+}
+
+html.honeywell-light-theme .selectedtpiMOTType {
+  color: #303030;
+}
+
+html.honeywell-light-theme .svg-circle-text {
+  fill: #808080;
+}
+
+html.honeywell-light-theme .background,
+html.honeywell-light-theme .lightBackground {
+  background-color: white;
+}
+
+html.honeywell-light-theme .detailsTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th.p-selection-column {
+  background: #f7f7f7;
+  border-right: 1px solid #aaa8a9;
+}
+
+html.honeywell-light-theme .detailsTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th:not(:last-child) {
+  border: 1px solid #aaa8a9;
+  background-color: #f7f7f7;
+}
+
+html.honeywell-light-theme .detailsTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-thead>tr>th {
+  border: 1px solid #aaa8a9;
+  background-color: #f7f7f7;
+}
+
+html.honeywell-light-theme .detailsTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-tbody td {
+  border: 1px solid #aaa8a9;
+}
+
+html.honeywell-light-theme .detailsTable>.ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody tr.p-datatable-row>td.p-selection-column {
+  border-right: 1px solid #aaa8a9;
+}
+
+html.honeywell-light-theme .detailsTable>.ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr:nth-child(even) {
+  background-color: #fff;
+}
+
+html.honeywell-light-theme .disabledColumn {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #aaa8a9 !important;
+}
+
+html.honeywell-light-theme .childTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th.expandedchildColumn {
+  background-color: #fff;
+}
+
+html.honeywell-light-theme .dateRangeContainer {
+  background-color: #fff;
+  border-color: #d0d0d0;
+}
+
+html.honeywell-light-theme .ViewShipmentStatusDetails {
+  background-color: #fff;
+}
+
+html.honeywell-light-theme .accordion.ui.fluid .title {
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 14px !important;
+  background: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .ChildGridViewAllShipmentLoadingDetails .p-datatable-wrapper tr th {
+  background: #d0d0d0 !important;
+}
+
+html.honeywell-light-theme .slotLayoutOuterPane {
+  background-color: #fff;
+}
+
+html.honeywell-light-theme .slotSummaryPane {
+  background-color: #f0f0f0;
+}
+
+html.honeywell-light-theme .slotSummaryEmptyTableBlock {
+  border: 1px solid #f0f0f0;
+}
+
+html.honeywell-light-theme .slotSummaryFilledTableBlock {
+  border: 1px solid #f0f0f0;
+}
+
+html.honeywell-light-theme .slotSummaryBlockOlderDate {
+  background-color: #e9e9e9;
+  border: 1px solid #979797;
+  color: #8a8a8a;
+}
+
+html.honeywell-light-theme .slotSummaryBlock {
+  background-color: #f3f7ef;
+  border: 1px solid #979797;
+  color: #8a8a8a;
+}
+
+html.honeywell-light-theme .slotSummaryBlockWindowClosed {
+  border: 1px solid #979797;
+  color: #8a8a8a;
+  background-image: repeating-linear-gradient(135deg,
+      transparent,
+      #e0e0e0 20px,
+      #000 20px);
+}
+
+html.honeywell-light-theme .slotDetailsPane {
+  background-color: #fff;
+}
+
+html.honeywell-light-theme .slotDetailsPane>div>div.ui.pointing.secondary.ui.scuf-tab.menu {
+  background-color: #f0f0f0;
+}
+
+html.honeywell-light-theme .slotDetailsCompletedBooking {
+  background-color: #e2fee2;
+}
+
+html.honeywell-light-theme .slotDetailsCompletedBookingBar {
+  background-color: #17e55c;
+}
+
+html.honeywell-light-theme .slotDetailsPastBooking {
+  background-color: #ffe8e7;
+}
+
+html.honeywell-light-theme .slotDetailsPastBookingBar {
+  background-color: #e6385e;
+}
+
+html.honeywell-light-theme .slotDetailsFutureBookingBar {
+  background-color: #1792e5;
+}
+
+html.honeywell-light-theme .slotDetailsFutureBooking {
+  background-color: #e8f4f8;
+}
+
+html.honeywell-light-theme .slotInActiveBay {
+  background-image: repeating-linear-gradient(135deg,
+      rgb(221, 177, 177),
+      #f0f0f0 20px,
+      #000 20px);
+}
+
+html.honeywell-light-theme .slotDetailsBlockedBooking {
+  background-image: repeating-linear-gradient(135deg,
+      #f0f0f0,
+      #fff 20px,
+      #000 20px);
+}
+
+html.honeywell-light-theme .slotDetailsBookingSpan {
+  color: #606060;
+}
+
+html.honeywell-light-theme .slotDetailsAddIconDiv {
+  color: #1792e5;
+}
+
+html.honeywell-light-theme .productAvailable {
+  color: #7eb338;
+}
+
+html.honeywell-light-theme .noProduct {
+  color: #a62219;
+}
+
+html.honeywell-light-theme .projectMasterList .treeviewContent {
+  background: #fff;
+}
+
+html.honeywell-light-theme .marineDashboardDrawerButton i.h-icon {
+  color: #fff;
+}
+
+html.honeywell-light-theme .sidebar-layout>.sidebar .menu .submenu.open.expand {
+  background-color: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .treeSidebarWidget.sidebar-layout>.sidebar div.ui.pointing.secondary.ui.scuf-tab.menu .active.item {
+  background-color: transparent;
+}
+
+html.honeywell-light-theme .operatorOrderPrintClosed {
+  background-color: #f0f0f0;
+}
+
+html.honeywell-light-theme .operatorOrderPrintOpen {
+  color: #d3d3d3;
+}
+
+html.honeywell-light-theme .operatorOrderForceCloseEnable {
+  background-color: #f0f0f0;
+}
+
+html.honeywell-light-theme .operatorOrderForceCloseDisable {
+  color: #d3d3d3;
+}
+
+html.honeywell-light-theme .sidebarLabel {
+  color: #202020;
+}
+
+html.honeywell-light-theme .selectedParent {
+  color: #303030;
+  /* font-weight: bold; */
+}
+
+/* html.honeywell-light-theme .sidebar-layout > .sidebar .menu .submenu.expand {
+  background-color: #e0e0e0 !important;
+} */
+
+html.honeywell-light-theme .treeSidebarWidget.sidebar-layout>.sidebar div.ui.pointing.secondary.ui.scuf-tab.menu .active.item {
+  background-color: #fff !important;
+}
+
+html.honeywell-light-theme .sidebar-layout>.sidebar .ui.menu .item.active {
+  background-color: #fff !important;
+}
+
+html.honeywell-light-theme .submenu.expand {
+  background-color: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .submenu.open.expand>a.item:first-child {
+  border-bottom: solid 2px #d0d0d0;
+}
+
+html.honeywell-light-theme .link.item.expand {
+  background-color: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .active.link.item .selectedParent {
+  /* font-weight: bold; */
+}
+
+/* html.honeywell-light-theme .ui.vertical.menu .menu .item.expand {
+  background-color: #e0e0e0 !important;
+} */
+
+html.honeywell-light-theme .wj-input input.wj-form-control {
+  color: #303030;
+  background: #fff;
+  border: #d0d0d0 .0625rem solid;
+}
+
+html.honeywell-light-theme .wj-input input.wj-form-control:focus {
+  border-color: #1274B7;
+  outline: none;
+}
+
+html.honeywell-light-theme .wj-flexgrid .wj-cells .wj-row:nth-child(odd) .wj-cell:not(.wj-group),
+html.honeywell-light-theme .wj-flexgrid .wj-rowheaders .wj-row:nth-child(even) .wj-cell:not(.wj-group) {
+  background: #fff;
+  color: #303030;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+html.honeywell-light-theme .wj-flexgrid .wj-cells .wj-row:nth-child(even) .wj-cell:not(.wj-group),
+html.honeywell-light-theme .wj-flexgrid .wj-rowheaders .wj-row:nth-child(odd) .wj-cell {
+  background: #f7f7f7;
+  color: #303030;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+html.honeywell-light-theme .wj-row:hover .wj-cell:not(.wj-group, .wj-header) {
+  background-color: #f0f0f0 !important;
+}
+
+html.honeywell-light-theme .wj-flexgrid .wj-row .wj-cell.wj-state-selected,
+html.honeywell-light-theme .wj-flexgrid .wj-row .wj-cell.wj-state-multi-selected {
+  background: #1892e5 !important;
+  border-bottom: solid 1px #1892e5 !important;
+  /* border-left: solid 5px #1892e5 !important; */
+}
+
+html.honeywell-light-theme .wj-colheaders .wj-cell.wj-header,
+html.honeywell-light-theme .wj-topleft .wj-cell.wj-header {
+  background: #fff !important;
+  color: #303030 !important;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+html.honeywell-light-theme .wj-colheaders .wj-cell.wj-header:hover,
+html.honeywell-light-theme .wj-topleft .wj-cell.wj-header:hover {
+  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+}
+
+html.honeywell-light-theme .wj-content {
+  border: 1px solid #d0d0d0 !important;
+  border-radius: 0 !important;
+}
+
+html.honeywell-light-theme .wj-control {
+  background: #fff !important;
+}
+
+html.honeywell-light-theme .wj-content.wj-collectionview-navigator {
+  background-color: #fff !important;
+  color: #303030;
+  font-weight: 500;
+  border-radius: 0;
+  border: 1px solid #d0d0d0 !important;
+}
+
+html.honeywell-light-theme .wj-input .wj-btn,
+html.honeywell-light-theme .wj-columnfiltereditor .wj-btn,
+html.honeywell-light-theme .wj-collectionview-navigator .wj-btn {
+  border: 0.0625rem solid #1274B7;
+  background-color: #1274B7 !important;
+  color: #fff;
+}
+
+html.honeywell-light-theme .wj-collectionview-navigator .wj-btn {
+  color: #45A7EA !important;
+  background-color: #fff !important;
+  border: none !important;
+}
+
+html.honeywell-light-theme .wj-btn.wj-btn-glyph:hover {
+  background-color: transparent !important;
+}
+
+html.honeywell-light-theme .wj-collectionview-navigator .wj-btn:hover {
+  background-color: #f7f7f7 !important;
+  border: none !important
+}
+
+html.honeywell-light-theme .wj-btn:hover {
+  background-color: #10659F !important;
+  border-color: #10659F !important;
+}
+
+html.honeywell-light-theme .wj-columnfiltereditor .wj-valuefilter-editor,
+html.honeywell-light-theme .column-picker,
+html.honeywell-light-theme .group-panel {
+  color: #303030 !important;
+}
+
+html.honeywell-light-theme .wj-input-group .wj-btn span[class^="wj-glyph"] {
+  color: #fff;
+  opacity: 1;
+}
+
+html.honeywell-light-theme .wj-collectionview-navigator .wj-input-group .wj-btn span[class^="wj-glyph"] {
+  color: #45A7EA;
+  opacity: 1;
+}
+
+html.honeywell-light-theme .wj-cell.wj-group {
+  background-color: #E0E0E0 !important;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+html.honeywell-light-theme .bayAllocationButton {
+  background-color: #f0f0f0 !important;
+}
+
+html.honeywell-light-theme .bayAllocationLargeButton {
+  background-color: #f0f0f0 !important;
+}
+
+html.honeywell-light-theme .bayAllocationButtonDisable {
+  background-color: #f0f0f0 !important;
+}
+
+html.honeywell-light-theme .bayAllocationLargeButtonDisable {
+  background-color: #f0f0f0 !important;
+}
+
+html.honeywell-light-theme .wj-grouped-checkbox {
+  background-color: #E0E0E0 !important;
+}
+
+html.honeywell-light-theme .bayButtonPosition {
+  background-color: #ffffff;
+}
+
+html.honeywell-light-theme .dashboardCard {
+  background-color: #fff;
+  /* outline: 2px solid #a0a0a0; */
+}
+
+html.honeywell-light-theme .dashboardCardHeader {
+  border-bottom: 1.5px solid #e0e0e0;
+  color: #202020 !important;
+}
+
+html.honeywell-light-theme .cardDetailsPopup {
+  background-color: #f7f7f7 !important;
+}
+
+html.honeywell-light-theme .carousel-accordion .content.active {
+  background-color: #f7f7f7 !important;
+}
+
+html.honeywell-light-theme .dashboard.detailsContainer {
+  background-color: #f7f7f7;
+  box-shadow: 0px 12px 10px -10px rgb(0 0 0 / 35%);
+}
+
+html.honeywell-light-theme .dashboardCharts {
+  background-color: #fff;
+}
+
+html.honeywell-light-theme .bullet {
+  background-color: #e0e0e0;
+}
+
+html.honeywell-light-theme .sidebar {
+  background-color: #f7f7f7 !important;
+}
+
+html.honeywell-light-theme .sidebar-layout>.sidebar .menu .submenu.open>.ui.menu {
+  border-bottom: 2px solid #d0d0d0;
+}
+
+html.honeywell-light-theme .Widget_NoData {
+  color: #a0a0a0 !important;
+}
+
+html.honeywell-light-theme .themeIcon:hover {
+  background-color: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .mobilePastHeaderRow {
+  border-bottom: 1px solid #E0E0E0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+html.honeywell-light-theme .mobilePastHeaderRowContent {
+  padding-top: 10px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+html.honeywell-light-theme .mobilePastHeaderRow {
+  font-weight: bold;
+}
+
+html.honeywell-light-theme .mobilePastBOLButton {
+  font-weight: bold;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable {
+  box-shadow: 0px 0px 2px #00000080;
+  border-radius: 5px;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-div-terminal {
+  line-height: 30px;
+  padding-left: 5px;
+  background: #e0e0e0;
+  color: #191919;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr.p-highlight {
+  background: #7EB338;
+}
+
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr.p-highlight .cell-data-wrap {
+  color: #202020;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr>td {
+  font-size: 12px;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr {
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-tr-datatable {
+  border-bottom: 1px solid #fff;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-tr-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr {
+  background: #e0e0e0;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr.p-highlight {
+  border: none !important;
+  border-top: 1px solid #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody {
+  border: none;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead th .p-column-title {
+  color: #000;
+  text-transform: none;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .select-all-checkbox {
+  display: none;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-selection-column .p-checkbox {
+  display: none;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead th {
+  border: none;
+}
+
+html.honeywell-light-theme .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-selection-column {
+  width: 0;
+  padding: 0 !important;
+}
+
+html.honeywell-light-theme .mobile-half-width-card {
+  background: #fff;
+  box-shadow: 0 0 2px 2px #e0e0e0;
+}
+
+html.honeywell-light-theme .mobile-half-width-card-borderRight {
+  border-right: 2px solid #f7f7f7;
+}
+html.honeywell-light-theme .mobile-bay-slot-div-content
+{
+  box-shadow: 0 1px 2px #00000080;
+}
+html.honeywell-light-theme .mobile-bay-card {
+  background: #e0e0e0;
+}
+
+html.honeywell-light-theme .mobile-tobebook-slot-card {
+  background: #fff;
+}
+
+html.honeywell-light-theme .mobile-slot {
+  background: #e0e0e0;
+}
+
+html.honeywell-light-theme .mobile-select .dropdown {
+  background: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .mobile-input .input-wrap {
+  background: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .mobile-expanded-tr {
+  background: #e0e0e0 !important;
+}
+
+html.honeywell-light-theme .mobile-pending-shipment-card {
+  background: #fff;
+}
+
+html.honeywell-light-theme .mobile-pending-receipt-card {
+  background: #fff;
+}
+
+html.honeywell-light-theme .mobile-large-font-datable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr>td {
+  color: #191919;
+}
+
+html.honeywell-light-theme .ui.breadcrumb .section span {
+  color: #191919;
+}
+
+html.honeywell-light-theme .mobilePastTableHeader {
+  box-shadow: 0px 0px 2px #00000080 !important;
+}

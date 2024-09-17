@@ -1,0 +1,5280 @@
+/* body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
+
+/* html {
+  scrollbar-width: thin;
+} */
+
+input::selection {
+  background-color: #cce2ff !important;
+}
+
+.activeted {
+  color: #fff;
+  background: #33a2ec;
+}
+
+.activeted a {
+  color: #fff;
+}
+
+.row ul {
+  list-style: none;
+  margin: 0px;
+  padding-inline-start: 0px;
+}
+
+.row ul li:hover {
+  background: #c8cacc;
+  cursor: pointer;
+}
+
+.TransloadingheaderLabel {
+  font-weight: bold !important;
+}
+
+/*End */
+
+.input-label-message {
+  font-weight: normal !important;
+}
+
+.headerLabel {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+
+.iconCircle {
+  height: 36.8px;
+  width: 36.8px;
+  background-color: #1892e5;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.iconblock {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.iconCircleDisable {
+  height: 36.8px;
+  width: 36.8px;
+  background-color: #808080;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.breadcrumb {
+  font-size: 1.125rem !important;
+  text-transform: uppercase;
+}
+
+.ui.breadcrumb .divider .h-icon {
+  font-size: 12px !important;
+}
+
+.sideBarHeight {
+  /* min-height: calc(100vh - 101px); */
+  min-height: calc(100vh - 101px);
+  /* height: auto !important;
+  height: calc(100vh - 101px); */
+}
+
+.sideBarHeight::after {
+  content: "";
+  height: calc(100vh - 101px);
+}
+
+.projectMasterList .p-datatable-wrapper {
+  min-height: calc(100vh - 280px) !important;
+  background: #fff;
+}
+
+.compositeTransactionList .projectMasterList .p-datatable-wrapper {
+  min-height: calc(100vh - 335px) !important;
+}
+
+.footerPosition {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  z-index: 10;
+}
+
+.headerPosition {
+  position: sticky !important;
+  top: 0vh;
+}
+
+.userActionPosition {
+  position: sticky !important;
+  bottom: 0vh;
+  z-index: 2;
+  background-color: #f7f7f7;
+  padding-top: 10px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.contentContainer {
+  margin: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.detailsContainer {
+  margin: 5px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 1px;
+}
+
+.tmuiPlaceHolder {
+  position: relative;
+}
+
+.timeWidth {
+  width: 32%;
+}
+
+.paddingHeaderItemLeft {
+  padding: 0px;
+  padding-left: 10px;
+  padding-bottom: 0px !important;
+}
+
+.detailsHeaderPopUp {
+  width: 318px;
+  background-color: #f5f5f5;
+}
+
+.detailsHeaderPopUpListPadding {
+  padding: 6px !important;
+}
+
+.detailsHeaderPopUpListPadding>.content {
+  /* font-size: 0.875rem !important; */
+  font-size: 13px !important;
+}
+
+.headerItemRight {
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.headerSpacing {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.compColHeight {
+  height: 40px;
+}
+
+.row {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.compartmentRow {
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  align-items: center !important;
+}
+
+.compartmentIcon {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.compartmentIconContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.margin_l10 {
+  margin-left: 10px;
+}
+
+.margin_l30 {
+  margin-left: 30px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+/* .headerContainer > .row > .col {
+  margin-top: 10px;
+} */
+.cancelButton {
+  background-color: #f47021 !important;
+  border: 0.0625rem solid #f47021 !important;
+}
+
+.compartmentLinks {
+  font-size: 13px;
+}
+
+.vehicleDataTableHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataTableHeadingPadding {
+  padding-left: 16px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.vehicleDataTableIcon {
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.vehicleNextButton {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.vehicleBackbtn {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/*
+.single-input {
+  width: 100% !important;
+}
+.input-wrap {
+  width: 90% !important;
+}
+.overlay-position-wrap {
+  width: 100% !important;
+}
+.datetime-input-wrap {
+  width: 100% !important;
+}
+.scuf-dropdown-wrapper {
+  width: 90% !important;
+}
+.input-box {
+  width: 100% !important;
+}
+.date-picker-input {
+  width: 100% !important;
+} */
+
+.input-box {
+  font-size: 16px !important;
+}
+
+.ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr.p-highlight {
+  border: solid 1px #1892e5 !important;
+  border-left: solid 5px #1892e5 !important;
+  /* border-bottom: solid 2px #1892e5 !important; */
+}
+
+.ui.date-picker-input.open-up .calendar-overlay {
+  transform: translateY(calc(100% + 0.25rem)) !important;
+  bottom: 0 !important;
+}
+
+.opSelect {
+  /* min-width: 130px !important;
+
+  padding: 0px !important;
+  margin-top: 8px; */
+  margin-right: 15px;
+}
+
+.shrText {
+  display: inline-block;
+  margin: 0px;
+  margin-right: 10px;
+}
+
+/* .opSelect > .dropdown {
+  padding: 0.1rem 0.5rem 0.1rem 0.75rem !important;
+  min-height: 1.5em !important;
+} */
+
+.toast-notification-wrap {
+  background: none;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+  padding: 0 !important;
+}
+
+.toast-notification {
+  margin: 0 !important;
+}
+
+.Toastify__toast-container {
+  width: auto !important;
+}
+
+.Toastify__close-button {
+  position: absolute;
+  right: 2px;
+  opacity: 1 !important;
+}
+
+.Toastify__close-button>svg {
+  height: 22px !important;
+  width: 22px !important;
+}
+
+.total-count {
+  min-width: 100px;
+}
+
+.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th .p-column-title {
+  max-width: none !important;
+  white-space: normal !important;
+  display: unset !important;
+}
+
+.ui.forge-datatable-wrap .p-datatable .p-datatable-thead>tr>th,
+.ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr>td {
+  vertical-align: top;
+}
+
+.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th .p-sortable-column-icon {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+}
+
+.sidebar-layout>.sidebar .ui.menu .item {
+  padding: 12px 12px !important;
+  padding-right: 20px !important;
+}
+
+.detailsTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th .p-column-title {
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  font-weight: 400;
+  text-transform: none;
+  color: #303030;
+}
+
+.detailsTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-tbody>tr>td.rowHeader .cell-data-wrap {
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  font-weight: 400;
+  text-transform: none;
+  color: #303030;
+}
+
+.detailsTable>.ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr.p-highlight {
+  border: solid 1px #1892e5 !important;
+  border-left: solid 5px #1892e5 !important;
+}
+
+.detailsTable .ui.forge-datatable-wrap .p-datatable.p-datatable-scrollable .p-datatable-scrollable-header-box {
+  border-bottom: transparent;
+}
+
+.detailsTable.havingchildTable>.ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody tr.p-datatable-row>td.p-selection-column {
+  border-right: none;
+}
+
+.detailsTable.havingchildTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th.p-selection-column {
+  border-right: none !important;
+}
+
+.detailsTable.havingchildTable>.ui.forge-datatable-wrap>.p-datatable table {
+  border: 1px solid #aaa8a9;
+}
+
+.detailsTable.havingchildTable>.ui.forge-datatable-wrap>.p-datatable tbody.p-datatable-tbody {
+  border: 1px solid #aaa8a9;
+}
+
+.expandedColumn {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.expandedchildColumn {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.childTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-thead th.expandedchildColumn {
+  border: none !important;
+  /* border-bottom: none !important; */
+}
+
+.childTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-tbody td.expandedchildColumn {
+  border: none !important;
+}
+
+.ddlSelectAll {
+  width: 16%;
+}
+
+.ddlSelectAll>.ui.checkbox {
+  top: 20px;
+}
+
+/* .ui.list {
+  background-color: #f5f5f5;
+} */
+
+/* .ui.list > .item {
+  width: "322px" !important;
+} */
+.ui.list>.item>.content {
+  font-size: 12px;
+}
+
+.accordion.ui.fluid .content {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.borderTable {
+  padding: 10px 0px;
+}
+
+.authLoading .color-overlay {
+  background: transparent !important;
+}
+
+.authLoading {
+  position: relative;
+}
+
+.loadingContainer {
+  /* display: flex; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  /* justify-content: space-around; */
+  margin: auto;
+}
+
+.globalLoader {
+  /* width: 100%; */
+  /* left: 50%; */
+  height: 35vh;
+  position: relative;
+  text-align: center;
+}
+
+.nestedList {
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.nestedListPosition .ui.loader {
+  top: 50% !important;
+}
+
+.loadingPosition {
+  position: relative;
+  top: 30%;
+
+  width: 50%;
+  margin: auto;
+
+  text-align: center;
+}
+
+.welcomePosition {
+  position: relative;
+  top: 42%;
+
+  width: 50%;
+  margin: auto;
+
+  text-align: center;
+}
+
+.signInFont {
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.loaderPosition {
+  top: 80px !important;
+}
+
+.globalLoaderPosition .ui.loader {
+  top: 100% !important;
+}
+
+.authLoading .ui.loader-wrap .ui.loader:after {
+  border-color: #1274b7 transparent transparent !important;
+}
+
+.dateSearch .ui.button {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.dateRangeContainer {
+  display: flex;
+  align-items: flex-start;
+  padding: 4px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+}
+
+.dateRangeMargin {
+  margin-right: 10px;
+}
+
+.ui.red.circular.empty.label.badge.circle-padding {
+  margin-left: 5px !important;
+}
+
+.ui.page-header .page-header-menu.ui.menu .item:not(.themeIcon) {
+  padding: 0rem 0.25rem !important;
+}
+
+.ui.scuf-dropdown-wrapper.no-chevron.has-content>.ui.multiple.selection.dropdown {
+  max-height: 100px !important;
+  overflow-y: auto !important;
+}
+
+.ui.scuf-dropdown-wrapper.has-content>.ui.fluid.multiple.selection.dropdown {
+  max-height: 100px !important;
+  overflow-y: auto !important;
+}
+
+.ui.scuf-dropdown-wrapper.expanded.has-content>.ui.active.visible.fluid.multiple.selection.dropdown {
+  max-height: 200px !important;
+  /* z-index: 3; */
+  overflow-y: visible !important;
+  /* overflow-x: hidden !important; */
+}
+
+.ui.active.visible.fluid.multiple.selection.dropdown a:nth-child(n + 100) {
+  display: none;
+}
+
+.ui.fluid .ui.search-wrap {
+  width: 100%;
+}
+
+.ui.fluid .ui.icon.input {
+  width: 100%;
+}
+
+.ui.search-wrap .ui.search.ui-search .ui.input {
+  min-width: auto !important;
+}
+
+.ui.search-wrap .ui.search.ui-search .results.visible {
+  min-width: auto !important;
+  width: 100% !important;
+  max-height: 16.02857143rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 11;
+}
+
+/**
+*  Tree View
+*
+*/
+.redIcon {
+  color: #f15a4f;
+}
+
+.ml--10 {
+  margin-left: -5px !important;
+  margin-right: -5px !important;
+}
+
+.treeSidebarWidget.sidebar-layout>.sidebar {
+  width: 100% !important;
+  /* padding: 0 10px; */
+  box-shadow: 10px 0px #fff;
+  border: none;
+  /* border:#d0d0d0 .0625rem solid */
+}
+
+.sidebar-layout.sideBarHeight.treeSidebarWidget {
+  border: #d0d0d0 0.0625rem solid;
+  overflow: hidden;
+}
+
+.tree-item.has-active {
+  font-weight: bold;
+}
+
+.projectMasterList .treeviewContent {
+  /* border: #d0d0d0 0.0625rem solid; */
+  min-height: calc(100vh - 150px);
+}
+
+.tree-item:focus {
+  font-weight: bold;
+}
+
+.treeSidebarWidget.sidebar-layout>.sidebar .ui.menu .item:hover,
+.treeSidebarWidget.sidebar-layout>.sidebar .ui.menu .item.active {
+  background: transparent;
+  border-left: 0;
+}
+
+.treeSidebarWidget.sidebar-layout>.sidebar div.ui.pointing.secondary.ui.scuf-tab.menu .item {
+  /* color: #777; */
+  border-bottom-width: 0;
+}
+
+.treeSidebarWidget.sidebar-layout>.sidebar div.ui.pointing.secondary.ui.scuf-tab.menu .active.item {
+  border-bottom: 3px solid #1274b7;
+  font-weight: bold;
+  /* background-color: transparent; */
+  /* color: #303030; */
+}
+
+.treeSidebarWidget.sidebar-layout>.sidebar div.ui.pointing.secondary.ui.scuf-tab.menu .item:after {
+  content: none;
+}
+
+.treeSidebarWidget.sidebar-layout>.sidebar div.ui.pointing.secondary.ui.scuf-tab.menu .item:hover {
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  /* transition: 1s ease-in-out; */
+}
+
+/* .treeSidebarWidget button.ui.medium.button.secondary.dotted-botton {
+  width: 45% !important;
+} */
+button.ui.medium.button.secondary.dotted-botton {
+  border-style: dotted;
+  border-width: 2px;
+  margin-bottom: 5px;
+  width: 83%;
+  margin-left: 24px !important;
+  padding: 7px 31px;
+  display: block;
+}
+
+.treeSidebarWidget .ui.tree {
+  width: 100% !important;
+  /* height: calc(100vh - 243px); */
+  /* overflow-y: auto; */
+}
+
+/* .tree-content {
+  overflow: unset !important;
+} */
+.treeSidebarWidget.sidebar-layout .tree-content .tree-item .content {
+  font-size: 14px;
+}
+
+.treeSidebarWidget.sidebar-layout .ui.button {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+/* .treeSidebarWidget .tree-content .tree-item .content .left-content {
+  width: 39% !important;
+} */
+/* .treeSidebarWidget .tree-item {
+  overflow: hidden !important;
+} */
+.button-group {
+  margin-left: 22px;
+}
+
+.treeSidebarWidget {
+  min-height: 300px !important;
+  height: 100%;
+}
+
+.treeviewContent .p-datatable-wrapper,
+.treeviewContent .accordion.ui.fluid {
+  min-height: calc(100vh - 514px) !important;
+}
+
+/* .treeviewContent .p-datatable-wrapper table {
+  height: calc(100vh - 514px) !important;
+  overflow-y: scroll;
+} */
+
+.treeviewContent .accordion.ui.fluid .title {
+  background: #fff !important;
+  border-bottom: none;
+  border-top: none;
+}
+
+.treeviewContent .accordion.ui.fluid {
+  border-top: #d0d0d0 0.0625rem solid;
+}
+
+.treeviewContent .accordion.ui.fluid .title {
+  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+}
+
+.treeviewContent .accordion.ui.fluid .content {
+  padding: 0 10px 10px !important;
+  margin-left: 18%;
+}
+
+.treeviewContent .accordion.ui.fluid .ui.checkbox {
+  margin-bottom: 8px;
+}
+
+.treeSidebarWidget.sideBarHeight::after {
+  content: none;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.ui.color-picker {
+  z-index: 10;
+  position: absolute !important;
+}
+
+button.ui.medium.button.primary.color-picker-close {
+  position: absolute;
+  z-index: 10;
+  right: 265px;
+  padding: 0.25rem !important;
+}
+
+.color-selected input.input-box {
+  border: none !important;
+}
+
+.ui.color-picker .heading {
+  visibility: hidden;
+}
+
+.ui.color-picker .advanced-toggle .heading {
+  visibility: unset;
+}
+
+.gridButtonFontColor {
+  color: #1892e5;
+  /* color: deepskyblue; */
+}
+
+.gridButtonAlignText {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  /* padding-right: 2.5rem; */
+  align-items: center;
+}
+
+.gridButtonAlignLeft {
+  padding-right: 67rem !important;
+}
+
+.margin_r25 {
+  margin-right: 25px;
+}
+
+.listbox ul {
+  border: #d0d0d0 0.0625rem solid;
+  height: 7.875rem;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.listbox li {
+  padding: 8px;
+}
+
+.selected-list {
+  background-color: lightgray;
+}
+
+.associateParamFieldBtn {
+  margin: 3.75rem 3.75rem !important;
+  padding: 1rem 2rem !important;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .below-text .ui.error-message {
+  background-color: white;
+} */
+.border-bottom-1 {
+  border-bottom: 1px solid #ddd;
+}
+
+.deviceheaderLabel {
+  font-size: 15px;
+  font-weight: bold;
+  font-variant: normal;
+}
+
+.deviceButton {
+  margin-top: 23px;
+  font-weight: bold;
+}
+
+.deviceDualandTransCheckBox {
+  margin-top: 25px !important;
+  margin-left: 5px !important;
+}
+
+.hideShowButton {
+  min-width: 431px !important;
+}
+
+.customDeviceCheckBox {
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
+
+.customDropdown {
+  margin-top: 24px !important;
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid #ddd;
+}
+
+.deviceheaderLabel {
+  font-size: 15px;
+  font-weight: bold;
+  font-variant: normal;
+}
+
+.deviceButton {
+  margin-top: 23px;
+  font-weight: bold;
+}
+
+.deviceCheckBox {
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
+
+.hideShowButton {
+  min-width: 431px !important;
+}
+
+.customDeviceCheckBox {
+  margin-top: 35px !important;
+}
+
+.customDropdown {
+  margin-top: 24px !important;
+}
+
+div.ui.pointing.secondary.ui.scuf-tab.menu .active.item {
+  border-bottom: 0.125rem solid #1792e5 !important;
+}
+
+.slotSummaryBlockOlderDate {
+  padding: 5px;
+  margin: 1px;
+  height: 100px;
+
+  font-size: 12px;
+  border-collapse: "collapse";
+  box-sizing: "border-box";
+  cursor: pointer;
+}
+
+.slotSummaryBlockWindowClosed {
+  padding: 5px;
+  margin: 1px;
+  height: 100px;
+
+  font-size: 12px;
+  border-collapse: "collapse";
+  box-sizing: "border-box";
+}
+
+.slotSummaryBlock {
+  padding: 5px;
+  margin: 1px;
+  height: 100px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.slotSummaryFilledTableBlock {
+  width: 14.2%;
+  min-width: 86px;
+  border-collapse: collapse;
+}
+
+.slotSummaryEmptyTableBlock {
+  width: 14.2%;
+}
+
+.slotSummaryEmptyBlock {
+  border: 1px solid #979797;
+  height: 100px;
+  margin: 1px;
+}
+
+.slotSummaryTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slotDateColHeader {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.slotDateSpan {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 240px;
+  text-align: center;
+}
+
+.slotBlocksDispaly {
+  display: flex;
+}
+
+.slotSummaryPane {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.slotDetailsPane {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.ui.breadcrumb {
+  margin-left: 0px !important;
+}
+
+.leftTile {
+  margin: 0px 20px 10px 10px;
+  background-color: #fff;
+}
+
+.middleTile {
+  margin: 0px 20px 10px 20px;
+  background-color: #fff;
+}
+
+.rightTile {
+  margin: 0px 10px 10px 20px;
+  background-color: #fff;
+}
+
+.tileValue {
+  font-size: 24px;
+  padding: 20px 20px 20px 0px;
+}
+
+.tileName {
+  font-size: 14px;
+}
+
+.tile {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 40%);
+  border-left: 5px solid #b0b0b0;
+}
+
+.slotLayoutOuterPane {
+  padding: 20px;
+}
+
+.slotBlockDateSpan {
+  font-size: 21px;
+}
+
+.slotBlockDateDiv {
+  margin-left: 10px;
+}
+
+.slotBlockBookingsDiv {
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.slotBlockBookingsSpan {
+  font-size: 12px;
+}
+
+.slotBlockLoadingsDiv {
+  margin-left: 10px;
+  /* margin-top: 2px; */
+}
+
+.slotBlockLoadingsSpan {
+  font-size: 12px;
+}
+
+.slotBlockAvailableDiv {
+  margin-left: 10px;
+  /* margin-top: 2px; */
+}
+
+.slotBlockAvailableSpan {
+  font-size: 12px;
+}
+
+.slotTimeRangeDDL {
+  width: 35%;
+}
+
+.slotBaySelection {
+  width: 16%;
+  min-width: 150px;
+  padding: 3px;
+}
+
+.slotBaySelection>.ui.scuf-dropdown-wrapper>.ui.selection.dropdown {
+  border-color: #303030;
+}
+
+.slotTimeRangeDDL>.ui.scuf-dropdown-wrapper>.ui.selection.dropdown,
+.slotTimeRangeDDL>.ui.scuf-dropdown-wrapper>.ui.dropdown.disabled,
+.slotBaySelection>.ui.scuf-dropdown-wrapper>.ui.selection.dropdown {
+  max-height: 1.9rem;
+  min-height: 0px;
+  line-height: 1em;
+  padding: 0.3rem 0.5rem 0.438rem 0.75rem;
+}
+
+.slotTimerangSpan {
+  width: 25%;
+  padding-top: 2px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.slotDetailsBlockedBooking {
+  position: absolute;
+  top: 2px;
+  height: 95px;
+  /* border: 1px solid #303030; */
+  z-index: 1;
+}
+
+.slotDetailsFutureBooking {
+  position: absolute;
+  top: 2px;
+  height: 95px;
+  /* border: 1px solid #303030; */
+  z-index: 1;
+  padding-right: 2px;
+}
+
+.slotDetailsFutureBookingBar {
+  margin-left: 2px;
+  margin-top: 5px;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.slotDetailsCompletedBooking {
+  position: absolute;
+  top: 2px;
+  height: 95px;
+  /* border: 1px solid #303030; */
+  z-index: 1;
+  padding-right: 2px;
+}
+
+.slotDetailsCompletedBookingBar {
+  margin-left: 2px;
+  margin-top: 5px;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.slotDetailsPastBooking {
+  position: absolute;
+  top: 2px;
+  height: 95px;
+  /* border: 1px solid #303030; */
+  z-index: 1;
+  /* background-color: rgb(248, 179, 191); */
+  padding-right: 2px;
+}
+
+.slotDetailsPastBookingBar {
+  margin-left: 2px;
+  margin-top: 5px;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.slotDetailsTransactionSpan {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.slotDetailsBookingSpan {
+  font-size: 10px;
+  color: #606060;
+  margin-left: 5px;
+  line-height: 11px;
+}
+
+.slotCreateDiv {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.slotDetailsBayBar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-width: 800px;
+}
+
+.slotDetailsBayDiv {
+  width: 16%;
+  min-width: 150px;
+  border: 1px solid #a0a0a0;
+  /* border-left: none; */
+  padding-left: 2px;
+}
+
+.slotDetailsBayFont {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.slotDetailsSlotsDiv {
+  width: 12%;
+  border: 1px solid #a0a0a0;
+  border-left: none;
+}
+
+.slotDetailsAddIconDiv {
+  height: 100px;
+  top: 30%;
+  left: 40%;
+  right: 20%;
+  position: relative;
+}
+
+.slotDetailssmallSpan {
+  font-size: 12px;
+}
+
+.slotDetailsSmallBoldSpan {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.productAvailable {
+  /* background-color: #17e55c; */
+  padding-right: 2px;
+}
+
+.noProduct {
+  /* background-color: #e6385e; */
+  padding-right: 2px;
+}
+
+.slotModelSeparator {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d8d8d8;
+}
+
+.slotBookSuccess {
+  border: 1px solid #a0a0a0;
+  padding: 5px;
+}
+
+.tankGroupAnchorTag {
+  width: 30%;
+  text-align: right;
+}
+
+.badge-TankGroup {
+  margin-left: 5rem !important;
+}
+
+.associatedTank-wrap {
+  border: #d0d0d0 0.0625rem solid;
+  padding: 4px 10px;
+  height: 102px;
+  overflow: auto;
+}
+
+.associatedTank-wrap-list {
+  border-bottom: 1px solid #eee;
+  padding: 4px 6px;
+}
+
+.treeSidebarWidget .sidebar .child-open .tree-item {
+  margin-left: 30px;
+}
+
+.treeSidebarWidget.sidebar-layout .tree-content .tree-item .content {
+  padding-left: 1rem !important;
+}
+
+.treeSidebarWidget.sidebar-layout .tree-content .tree-item .content.has-children:first-child {
+  padding-left: 0 !important;
+}
+
+.treeSidebarWidget.sidebar-layout .tree-content .tree-item .content.has-children {
+  padding-left: 1.5rem !important;
+}
+
+.deviceAccordian .accordion.ui.fluid .title {
+  padding: 1rem;
+  background: #e0e0e0 !important;
+}
+
+.deviceAccordian .accordion.ui.fluid {
+  min-height: inherit !important;
+}
+
+.deviceAccordian .accordion.ui.fluid .content {
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+
+.bayAccordian .accordion.ui.fluid .title {
+  padding: 1rem;
+  background: #e0e0e0 !important;
+}
+
+.bayAccordian .accordion.ui.fluid {
+  min-height: inherit !important;
+}
+
+.bayAccordian .accordion.ui.fluid .content {
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+
+.attributeAccordian .title {
+  padding-top: 0.68rem !important;
+  padding-bottom: 0.68rem !important;
+}
+
+.attributeAccordian .content {
+  margin-top: 1rem;
+}
+
+.attributeDetails-wrap {
+  padding-bottom: 0 !important;
+}
+
+.ViewMarineReceiptCloseHeader {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.detailsButton {
+  text-align: right;
+  margin-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.autoDetailsContainer {
+  background-color: white;
+  margin: 5px;
+  padding-top: 8px;
+  margin-top: -3px;
+}
+
+.headerContainer {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 13px 10px;
+}
+
+.autoHeaderContainer {
+  background-color: white;
+  margin: 5px 5px 0px 5px;
+  padding: 8px;
+  text-align: center;
+  color: green;
+}
+
+.ViewShipmentStatusDetails {
+  position: relative;
+  right: 0;
+  min-height: calc(100vh - 140px) !important;
+  /* z-index: 1000; */
+  z-index: 800;
+  height: 100%;
+  border: 1px solid #aaa8a9;
+  display: flex;
+  flex-direction: column;
+}
+
+.showShipmentStatusRightPane {
+  width: 75%;
+  float: left;
+  margin-right: 5px;
+}
+
+.drawerClose {
+  width: 99.5%;
+  float: left;
+}
+
+.showShipmentStatusLeftPane {
+  width: 24%;
+  float: right;
+}
+
+.showShipmentStatusFilter {
+  display: block;
+}
+
+.showViewTruck {
+  display: inline-flex;
+}
+
+.timelineAlignment {
+  align-items: end !important;
+  float: left;
+  margin-left: 0.5rem !important;
+  width: 100%;
+  margin-top: auto;
+}
+
+.ViewShipmentStatusHeader {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.timelineConnector {
+  background-color: limegreen !important;
+  margin-top: -0.4rem;
+  margin-bottom: -0.5rem;
+  min-height: 40px !important;
+}
+
+.ViewShipmentButton {
+  /* min-width: 12.8rem !important; */
+  width: 100%;
+  margin-left: 0rem !important;
+  margin-top: 1rem !important;
+  font-size: 0.6rem !important;
+  padding: 0.2rem !important;
+}
+
+.MuiTimelineItem-root {
+  min-height: 40px !important;
+  width: 99%;
+}
+
+.inProgressOperations {
+  border-color: limegreen !important;
+}
+
+.ViewShipmentDetailsButton {
+  align-self: center;
+  min-width: 15rem !important;
+  margin-bottom: 1rem !important;
+  margin-left: 1.5rem !important;
+  /* position: absolute; */
+  bottom: 0 !important;
+  /* line-height: 0.6rem !important;
+  letter-spacing: 0px !important; */
+}
+
+.ViewShipmentDetailsButton .button-content {
+  font-size: 11px !important;
+}
+
+.MuiTimelineContent-root {
+  flex: unset !important;
+}
+
+.completedOperations {
+  background-color: limegreen !important;
+  border-color: unset !important;
+}
+
+.tank-form-header {
+  font-family: HoneywellSansWeb-Extrabold;
+  font-size: 14px;
+  /* color:#303030; */
+  color: #606060;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+
+.atgDetails-wrap {
+  margin-top: 1rem;
+}
+
+.archiveDates {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #404040;
+}
+
+.demoText {
+  background-color: #404040 !important;
+  font-size: small;
+  color: yellow;
+}
+
+.detailsTable>.ui.forge-datatable-wrap .p-datatable .p-datatable-tbody>.p-highlight td {
+  border-top: solid 1px #1892e5 !important;
+  border-bottom: solid 1px #1892e5 !important;
+}
+
+/* .detailsContainer .ui.forge-datatable-wrap {
+  min-height: calc(100vh - 520px);
+  overflow: auto;
+} */
+
+.selectitem {
+  margin-top: 24px;
+}
+
+.shipmentTabAlignment {
+  margin-left: 0.5rem;
+}
+
+.associatedTank-wrap-list label {
+  display: inline-flex;
+  width: 100%;
+  line-height: 18px;
+}
+
+.associatedTank-wrap-list label span {
+  width: 70%;
+  display: inline-block;
+}
+
+.MuiTimelineItem-missingOppositeContent:before {
+  content: none !important;
+}
+
+.MuiTimelineItem-missingOppositeContent::before {
+  flex: 0 !important;
+}
+
+.ui.label.badge.EmptyLabelStyle {
+  color: white !important;
+  line-height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  min-width: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+.ui.label.badge.InSpecLabelStyle {
+  color: white !important;
+  line-height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  min-width: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+.ui.label.badge.OffSpecCorrectableLabelStyle {
+  color: white !important;
+  line-height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  min-width: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+.ui.label.badge.OffSpecNotCorrectableLabelStyle {
+  color: white !important;
+  line-height: 1.5rem !important;
+  min-height: 1.5rem !important;
+  min-width: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+.ViewAllShipmentTimelineDiv {
+  position: static;
+  margin-left: -25rem;
+}
+
+.setLocationModal {
+  margin: initial !important;
+  width: 40% !important;
+}
+
+.setLocationModal .projectMasterList .p-datatable-wrapper {
+  min-height: calc(100vh - 600px) !important;
+  background: #fff;
+}
+
+.MuiTimelineDot-root {
+  align-self: auto !important;
+}
+
+.ChildGridViewAllShipmentLoadingDetails {
+  padding: 2rem;
+}
+
+.ui.disabled.checkbox.LabelEnabled label {
+  color: black !important;
+  /* margin-bottom: 13%; */
+}
+
+.ValidBtn {
+  margin-top: 8px;
+  border: 1px solid #1892e5;
+  color: #1892e5;
+  background-color: white;
+  cursor: pointer;
+}
+
+.ViewMarineDetailsButton {
+  align-self: center;
+  min-width: 85% !important;
+  margin-bottom: 1rem !important;
+  margin-left: 10% !important;
+  position: absolute;
+  bottom: 0 !important;
+}
+
+.ViewMarineDetailsButton {
+  align-self: center;
+  min-width: 85% !important;
+  margin-bottom: 1rem !important;
+  margin-left: 10% !important;
+  position: absolute;
+  bottom: 0 !important;
+}
+
+/* @media (max-width: 1366px) {
+  .treeview-container {
+    width: 20% !important;
+  }
+  .main-content-container {
+    width: 80%;
+     max-width: 74% !important; 
+  }
+} */
+
+/* @media (max-width: 1440px) { */
+.treeview-container {
+  width: 25% !important;
+}
+
+.main-content-container {
+  width: 75%;
+  /* max-width: 74% !important; */
+  border: 0.0625rem solid #d0d0d0;
+}
+
+/* } */
+/* @media (min-width: 1440px) {
+  .treeview-container {
+    max-width: auto !important;
+  }
+  .main-content-container {
+    max-width: auto !important;
+    border: #d0d0d0 0.0625rem solid;
+  }
+} */
+
+.DetailsUpdate {
+  float: right;
+  position: relative;
+  bottom: 8%;
+  right: 1.55%;
+  right: 1.2%;
+}
+
+/* .ui.tooltip { background-color: #fff !important; color: #000 !important; border: 1px solid #d0d0d0 !important; }
+.ui.tooltip:before { background: #ffffff !important;
+  border-top: 1px solid #d0d0d0 !important;
+  border-left: 1px solid #d0d0d0 !important;} */
+
+.ui.single-input.fluid.disabled .input-wrap input {
+  color: #6e6e6e !important;
+}
+
+.ui.disabled.dropdown .text {
+  color: #6e6e6e !important;
+}
+
+.loadingTable {
+  -ms-flex: 0 0 98%;
+  flex: 0 0 98%;
+  width: 900px;
+  margin-left: 1%;
+}
+
+/* @media (max-width: 1520px) {
+  .treeview-container { overflow-x: auto !important;}
+} */
+
+.sidebar-layout {
+  overflow-x: visible !important;
+}
+
+.marineCricle {
+  margin-left: -6px\0;
+}
+
+.operatorDashboardStatistics {
+  background: #fff;
+  border-bottom: solid 1px #d0d0d0;
+}
+
+.operatorDashboardSummary {
+  padding: 35px 2% 30px;
+  font: bold 18px arial;
+  border-right: solid 1px #d0d0d0;
+}
+
+.operatorDashboardSummaryNumber {
+  font: bold 48px arial;
+  color: #1273b2;
+  padding-right: 5px;
+}
+
+.operatorDashboardSummaryText {
+  font: normal 18px arial;
+  color: #606060;
+  padding-top: 8px;
+}
+
+.operatorOrder {
+  padding: 9px 14px;
+  display: flex;
+  font: 12px Arial;
+  background-color: rgb(255, 255, 255);
+}
+
+.operatorRailOrder {
+  padding: 9px 14px;
+  width: 620px;
+  height: 220px;
+  font: 12px Arial;
+  background-color: rgb(255, 255, 255);
+}
+
+.operatorOrderButtonColumn {
+  float: left;
+  /* height: 220px; */
+  width: 16%;
+}
+
+.operatorOrderForceClose {
+  height: 101px;
+  text-align: center;
+  border-bottom: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+  font-weight: bold;
+  padding-top: 45px;
+}
+
+.operatorOrderPrint {
+  height: 101px;
+  text-align: center;
+  border-bottom: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+  padding-top: 45px;
+}
+
+.operatorOrderPrintClosed {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.operatorOrderForceCloseEnable {
+  cursor: pointer;
+}
+
+.operatorOrdertransactionInfo {
+  float: left;
+  width: 30%;
+  padding: 19px 15px;
+  border-right: 1px solid #a0a0a0;
+}
+
+.operatorRailOrdertransactionInfo {
+  float: left;
+  width: 260px;
+  padding: 53px 19px;
+  border-right: 1px solid #a0a0a0;
+}
+
+.operatorOrdertransactionInfoTitle {
+  /* margin-top: 7px; */
+  margin-bottom: 10px;
+}
+
+.operatorOrdertransactionInfoContent {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.operatorOrderProductAndCompartmentDetails {
+  float: left;
+  width: 55%;
+  /* font-weight: bold; */
+}
+
+.operatorOrderProductAndCompartmentDetailsTitle {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.operatorOrderProduct {
+  float: left;
+  /* width: 105px; */
+  width: 30%;
+  /* height: 140px; */
+  text-align: center;
+  /* border-right: 1px solid #a0a0a0; */
+}
+
+.operatorOrderCircle {
+  /* display: inline-block; */
+  /* float: left; */
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.operatorOrderCompartmentDetails {
+  float: left;
+  width: 70%;
+  padding-left: 8px;
+  border-left: 1px solid #a0a0a0;
+}
+
+.operatorOrderCompartmentDetailsListTitle {
+  height: 15px;
+  /* width: 50px; */
+  text-align: right;
+  /* padding-bottom: 2px; */
+}
+
+.operatorOrderCompartmentDetailsListContent {
+  height: 15px;
+  /* width: 65px; */
+  text-align: right;
+  /* padding-bottom: 2px; */
+}
+
+.operatorOrderLoader {
+  margin-top: 100px;
+}
+
+.operatorDashboardSummaryCell {
+  width: 17%;
+  padding-top: 20px;
+  padding-left: 3%;
+  padding-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border-right: solid 1px #d0d0d0;
+}
+
+.marineDashboardHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 0 10px 10px;
+}
+
+.marineDashboardFilter {
+  text-align: right;
+  flex: 0 0 75% 0;
+}
+
+.marineDashboardThroughputSummary {
+  text-align: left;
+  padding: 5px 10px 0 15px;
+}
+
+.marineDashboardDrawer {
+  background: #fff;
+  border: 1px solid gainsboro;
+  width: 435px;
+  height: 91%;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+  right: -410px;
+  transition-duration: 1s;
+  z-index: 1000;
+  opacity: 0.6;
+}
+
+.marineDashboardDrawerShow {
+  opacity: 1;
+  transform: translateX(-410px);
+  z-index: 1000;
+}
+
+.marineOperationDrawerShow {
+  opacity: 1;
+  z-index: 10000;
+  width: 100%;
+}
+
+.marineDashboardDrawerButton {
+  position: absolute;
+  top: 300px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #303030;
+  /* background-color: black; */
+}
+
+.marineDashboardNoDataAvailable {
+  text-align: center;
+  padding-top: 151px;
+  color: #404040;
+  font-weight: 620;
+  font-size: 15px;
+}
+
+.marineDashboardThroughputSummaryTab {
+  margin-top: -30px;
+  padding: 15px 0px;
+  width: 400px;
+  height: 383px;
+}
+
+.marineDashboardThroughputSummaryListTitle {
+  font-size: 15px;
+  font-weight: 610;
+  margin-right: 18px;
+  margin-bottom: 14px;
+  color: gray;
+}
+
+.marineDashboardThroughputSummaryListContent {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.marineDashboardShift {
+  width: 75%;
+  position: relative;
+  vertical-align: top;
+  float: left;
+}
+
+.railDashboardShift {
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+  /* float: left; */
+}
+
+.marineDashboardCurrent {
+  width: 25%;
+  position: relative;
+  vertical-align: top;
+  float: left;
+}
+
+.marineDashboardRightShift {
+  width: 85%;
+  font-size: 9px;
+  position: relative;
+  float: left;
+}
+
+.marineDashboardLiveCompHeader {
+  font: bold 10px arial;
+  color: #404040;
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+}
+
+.marineDashboardOverview {
+  width: 100%;
+  border-top: solid 1px #d0d0d0;
+  font-size: 11px;
+  background-color: #ffffff;
+  height: 110px;
+}
+
+.dashboardFilled {
+  padding: 0;
+  border: 1px dotted #d9d9d9;
+  height: 24px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+
+.marineDashboardTitle {
+  height: 15px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.marineDashboardFooterTime {
+  width: 76.5%;
+  border-top: solid 1px #ddd;
+  font-size: 9px;
+}
+
+.railDashboardFooterTime {
+  width: 100%;
+  border-top: solid 1px #ddd;
+  font-size: 9px;
+}
+
+.marineDashboardFooterTimeLeft {
+  width: 11%;
+  border-right: solid 1px #ddd;
+  float: left;
+  text-align: right;
+}
+
+.railDashboardFooterTimeLeft {
+  width: 12%;
+  border-right: solid 1px #ddd;
+  float: left;
+  text-align: right;
+}
+
+.marineDashboardFooterTimeCenter {
+  width: 87%;
+  float: left;
+  margin-top: -3px;
+}
+
+.railDashboardFooterTimeCenter {
+  width: 86%;
+  float: left;
+  /* margin-top: -3px; */
+  border-top: solid 1px #ddd;
+}
+
+.roadDashboardFooterTimeCenter {
+  width: 80%;
+  float: left;
+  /* margin-top: 0px; */
+  border-top: solid 1px #ddd;
+}
+
+.marineDashboardFooterTimeRight {
+  width: 2%;
+  border-right: solid 1px #ddd;
+  padding: 0 !important;
+  vertical-align: top;
+  /* margin-left: 8px; */
+  float: left;
+}
+
+.railDashboardFooterTimeRight {
+  width: 2%;
+  border-right: solid 1px #ddd;
+  padding: 0 !important;
+  vertical-align: top;
+  margin-left: -8px;
+  float: left;
+}
+
+.filterOrderStatus {
+  margin: 5px 25px 20px 15px;
+  width: 75px;
+}
+
+.filterButton {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.MarineDashboardSummaryCell {
+  width: 17%;
+  padding-top: 20px;
+  padding-left: 4.5%;
+  padding-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border-right: solid 1px #d0d0d0;
+}
+
+.timeTakenSliderDescription {
+  display: flex;
+  width: calc(100% - 95px);
+  padding-right: 25px;
+  text-align: end;
+}
+
+.timeTakenDescription {
+  margin-left: 85px;
+}
+
+.timeTakenDescriptionItem {
+  /* margin-left: 112px; */
+  width: 20%;
+}
+
+.timeTakenDescriptionText {
+  /* margin-left: 70px; */
+  font-size: 11px;
+  width: 105px;
+  text-align: end;
+}
+
+.timeTakenDescriptionTextItem {
+  font-size: 11px;
+  width: 20%;
+  text-align: end;
+}
+
+.graphDurationDescription {
+  width: 110px;
+  text-align: end;
+}
+
+.graphDurationDescriptionItem {
+  width: 33.33%;
+}
+
+.graphDurationDescriptionText {
+  font-size: 11px;
+  width: 125px;
+  text-align: end;
+}
+
+.graphDurationDescriptionTextItem {
+  font-size: 11px;
+  width: 33.33%;
+}
+
+.berthFilter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.berthSelectFilter {
+  width: 80%;
+  margin-left: -45px;
+}
+
+.berthCheckboxFilter {
+  padding-top: 5px;
+}
+
+.denyLoadMinutes .below-text .error-message {
+  width: 175px !important;
+}
+
+.forceCompleteChkBox {
+  margin: auto !important;
+  width: 25% !important;
+}
+
+.cancelENButton {
+  background-color: #a0a0a0 !important;
+  border-color: #a0a0a0 !important;
+  border-color: #a0a0a0 !important;
+}
+
+.marineModalPrint {
+  margin: initial !important;
+  overflow-y: auto;
+}
+
+.marineDashboardTable1 {
+  width: 100%;
+  border-top: solid 1px #d0d0d0;
+  font-size: 11px;
+  background-color: #ffffff;
+}
+
+.marineDashboardTd2 {
+  vertical-align: top;
+  font-size: 9px;
+  width: 86%;
+  position: absolute;
+}
+
+.marineDashboardDiv1 {
+  display: block;
+  width: 100%;
+  text-align: right;
+  height: 12px;
+  background-color: #f7f7f7;
+}
+
+.marineDashboardDiv2 {
+  display: block;
+  width: 100%;
+  text-align: right;
+  height: 40px;
+  padding: 10px 5px;
+  margin-right: 2px;
+}
+
+.marineDashboardDiv3 {
+  display: block;
+  width: 100%;
+  height: 40px;
+  /* vertical-align: middle; */
+  position: relative;
+  background-color: #ededed;
+  border-bottom: dashed 1px #d0d0d0;
+}
+
+.marineDashboardDiv4 {
+  z-index: 1;
+  display: block;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+  /* vertical-align: middle; */
+  padding: 10px 0;
+}
+
+.marineDashboardDiv5 {
+  display: inline-block;
+  height: 30px;
+  /* float: left; */
+  vertical-align: top;
+  background-color: transparent !important;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+}
+
+.marineDashboardDiv6 {
+  display: block;
+  height: 10px;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.marineDashboardDiv7 {
+  display: block;
+  height: 4px;
+  background-color: #99db70;
+  width: 100%;
+}
+
+.marineDashboardDiv8 {
+  display: block;
+  height: 36px;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.marineDashboardDiv9 {
+  display: block;
+  width: 100%;
+  text-align: left;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  /* vertical-align: bottom; */
+}
+
+.marineDashboardDiv10 {
+  display: block;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* vertical-align: bottom; */
+}
+
+.marineDashboardDiv11 {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 9%;
+  background-color: transparent;
+  height: 100%;
+  margin-left: 3%;
+}
+
+.roadGraphDurationDescription {
+  width: 110px;
+  text-align: end;
+}
+
+.roadGraphDurationDescriptionItem {
+  width: 50%;
+}
+
+.roadGraphDurationDescriptionLastItem {
+  width: 50%;
+}
+
+.roadGraphDurationDescriptionText {
+  font-size: 11px;
+  width: 130px;
+  text-align: end;
+}
+
+.roadGraphDurationDescriptionTextItem {
+  font-size: 11px;
+  width: 50%;
+}
+
+.marineFooterTimeDiv1 {
+  display: inline-block;
+  /* float: left; */
+  height: 10px;
+  border-right: solid 1px transparent;
+}
+
+.timeGraphHtmlTable1 {
+  width: 100%;
+  border-top: solid 1px #ddd;
+  font-size: 11px;
+}
+
+.timeGraphHtmlTd1 {
+  /* width: 11%; */
+  /* border-right: solid 1px #ddd; */
+  padding: 0 !important;
+  vertical-align: top;
+}
+
+.railTimeGraphHtmlTd {
+  width: 9%;
+  border-right: solid 1px #ddd;
+  padding: 0 !important;
+  vertical-align: top;
+}
+
+.timeGraphHtmlTd2 {
+  vertical-align: top;
+  font-size: 9px;
+}
+
+.timeGraphHtmlDiv1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  /* vertical-align: bottom; */
+}
+
+.timeGraphHtmlDiv2 {
+  margin-top: -25px;
+  /* margin-left: 5px; */
+}
+
+.marineDashboardShiftLines1 {
+  width: 0.1%;
+  z-index: 25;
+  margin: 1px;
+  font: bold 10px arial;
+  color: #404040;
+  height: 100%;
+  z-index: 10;
+  text-align: left;
+  background-color: transparent;
+  border-left: 3px solid #a9a9a9;
+  top: 0;
+  position: absolute;
+}
+
+.marineDashboardShiftLines2 {
+  width: 0.1%;
+  z-index: 25;
+  height: 100%;
+  margin: 1px;
+  font: bold 10px arial;
+  color: #404040;
+  z-index: 10;
+  text-align: right;
+  background-color: transparent;
+  border-right: 3px solid #a9a9a9;
+  top: 0;
+  position: absolute;
+}
+
+.marineDashboardShiftLines3 {
+  width: 1%;
+  height: 100%;
+  margin: 1px;
+  font: bold 10px arial;
+  color: #404040;
+  text-align: left;
+  z-index: 10;
+  background-color: transparent;
+  top: 0;
+  position: absolute;
+  left: 0%;
+}
+
+.marineDashboardShiftName1 {
+  width: 20%;
+  margin: 1px;
+  font: bold 10px arial;
+  /* color: #404040; */
+  height: 100%;
+  z-index: 10;
+  text-align: left;
+  background-color: transparent;
+  top: 0;
+  position: absolute;
+}
+
+.marineDashboardShiftName2 {
+  width: 20%;
+  height: 100%;
+  margin: 1px;
+  font: bold 10px arial;
+  /* color: #404040; */
+  z-index: 10;
+  text-align: right;
+  background-color: transparent;
+  top: 0;
+  position: absolute;
+}
+
+.marineDashboardShiftName3 {
+  width: 20%;
+  height: 100%;
+  margin: 1px;
+  font: bold 10px arial;
+  /* color: #404040; */
+  text-align: left;
+  z-index: 10;
+  background-color: transparent;
+  top: 0;
+  position: absolute;
+  left: 0%;
+}
+
+.MarineDashboardCompartmentsDiv1 {
+  border-top: 1px solid #d0d0d0;
+  background-color: #f7f7f7;
+}
+
+.MarineDashboardCompartmentsDiv2 {
+  width: 100%;
+  height: 12px;
+  background-color: #f7f7f7;
+}
+
+.MarineDashboardCompartmentsDiv3 {
+  height: 110px !important;
+  background-color: #ffffff;
+}
+
+.marineDashboardFrameTd1 {
+  width: 70%;
+  position: relative;
+  vertical-align: top;
+}
+
+.marineDashboardFrameTd2 {
+  vertical-align: top;
+  font-size: 9px;
+  position: relative;
+}
+
+.marineDashboardFrameTd3 {
+  vertical-align: top;
+  width: 30%;
+}
+
+.marineDashboardFrameTd4 {
+  width: 70%;
+  position: relative;
+  vertical-align: top;
+}
+
+.marineDashboardFrameTd5 {
+  width: 70%;
+  position: relative;
+}
+
+.marineDashboardFrameDiv1 {
+  font: bold 10px arial;
+  /* color: #404040; */
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+}
+
+.marineDashboardFrameDiv2 {
+  overflow-y: auto;
+  max-height: 665px !important;
+}
+
+.railDashboardIdentification {
+  width: 99%;
+  position: relative;
+  vertical-align: top;
+}
+
+.railTableIdentification {
+  vertical-align: top;
+  font-size: 9px;
+  position: relative;
+}
+
+.railTableResults {
+  overflow-y: auto;
+  max-height: 665px !important;
+}
+
+.railDivResults {
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+}
+
+.truckDashboardIdentification {
+  width: 80%;
+  position: relative;
+  vertical-align: top;
+}
+
+.truckTableIdentification {
+  vertical-align: top;
+  font-size: 9px;
+  position: relative;
+}
+
+.truckDivQueueListHeader {
+  width: 100%;
+  height: 15px;
+  font: bold 10px arial;
+  /* color: #404040; */
+}
+
+.truckDivLiveCompHeader {
+  font: bold 10px arial;
+  /* color: #404040; */
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+}
+
+.truckTableResults {
+  overflow-y: auto;
+  max-height: 665px !important;
+}
+
+.truckDivResults {
+  width: 80%;
+  position: relative;
+  vertical-align: top;
+}
+
+.filled {
+  padding: 0;
+  border: 1px dotted #d9d9d9;
+  height: 23px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  display: none;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  font-size: 24px !important;
+  margin: 10px 10px 10px 10px;
+}
+
+.CountryStyle {
+  background-color: white;
+  color: #303030;
+  font-weight: 1px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+}
+
+@keyframes iconfontAnimate {
+  50% {
+    font-size: 24px;
+  }
+}
+
+.blinking {
+  animation: fade 1s infinite alternate;
+  /* animation: iconfontAnimate 5s infinite; */
+}
+
+.mapAliveIcon {
+  font-size: 24px;
+  color: #34a853;
+}
+
+.mapDeadIcon {
+  font-size: 24px;
+  color: #ee675c;
+}
+
+.leaflet-popup-content {
+  width: 310px !important;
+}
+
+.mapButton {
+  width: 100%;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  /* padding-top: 5px !important;
+  padding-bottom: 5px !important; */
+  line-height: 1.15 !important;
+}
+
+.mapButtondiv {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0px !important;
+}
+
+.svg {
+  display: block;
+  margin: 5px auto;
+  max-width: 100%;
+}
+
+.svg-circle-bg {
+  fill: none;
+}
+
+.svg-circle {
+  fill: none;
+}
+
+.svg-circle-text {
+  font-size: 2rem;
+  text-anchor: middle;
+
+  font-weight: bold;
+}
+
+.dashboardTab {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+}
+
+.scuf-tab>div.dashboardTab:first-child {
+  margin-left: 0;
+}
+
+.dashboardTab .active {
+  border-bottom: 0.125rem solid #1792e5 !important;
+}
+
+.dashboardTab .item {
+  text-overflow: unset;
+  text-align: left !important;
+  min-width: unset !important;
+  margin-right: 0px !important;
+}
+
+.tankFilled {
+  padding: 0;
+  border: 1px solid #9e9e9e;
+  border-radius: 50%/20%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+
+.LiveCompartmentFont {
+  font-size: 11px;
+  /* color: #404040; */
+  font-family: Arial;
+}
+
+.filling {
+  position: absolute;
+  /*bottom: 0;*/
+  width: 100%;
+}
+
+.dashboardFilterModal {
+  margin: initial !important;
+}
+
+.roadDashboardInQueue {
+  width: 13%;
+  vertical-align: top;
+  font-size: 11px;
+}
+
+.roadDashboardInQueueBac {
+  display: block;
+  width: 100%;
+  text-align: right;
+  height: 12px;
+  background-color: #ffffff;
+}
+
+.roadDashboardDiv1 {
+  height: 13px;
+  width: 100%;
+  border: dashed 1px #bbb;
+  border-top-left-radius: 16px;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: 5px;
+}
+
+.roadDashboardDiv2 {
+  height: 13px;
+  width: 100%;
+  border: dashed 1px #bbb;
+  border-bottom-left-radius: 16px;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -2px;
+}
+
+.roadDashboardDiv3 {
+  height: 2px;
+  width: 100%;
+  border: dashed 1px #bbb;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.roadDashboardDiv4 {
+  display: inline-block;
+  height: 40px;
+  /* float: left; */
+  vertical-align: top;
+}
+
+.roadDashboardDiv5 {
+  display: block;
+  height: 18px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: center;
+  /* vertical-align: bottom; */
+}
+
+.roadDashboardDiv6 {
+  display: block;
+  height: 30px;
+  width: 25px;
+  border: dashed 1px #bbb;
+  border-left: 0;
+  border-bottom: 0;
+  border-top-right-radius: 12px;
+}
+
+.roadDashboardDiv7 {
+  /* display: inline-block; */
+  float: left;
+  height: 20px;
+  margin-left: 24.5px;
+  width: 24px;
+  border: dashed 1px #bbb;
+  border-right: 0;
+  border-top: 0;
+  border-bottom-left-radius: 12px;
+  text-align: right;
+}
+
+.roadDashboardDiv8 {
+  border: dashed 1px #bbb;
+  width: 100%;
+  height: 10px;
+  display: block;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-top: 12px;
+}
+
+.roadDashboardDiv9 {
+  border: dashed 1px #bbb;
+  width: 100%;
+  height: 10px;
+  display: block;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.roadDashboardDiv10 {
+  border-right: dashed 1px #bbb;
+  width: 50%;
+  height: 15px;
+  display: block;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+.roadDashboardDiv11 {
+  display: inline-block;
+  height: 40px;
+  /* float: left; */
+  vertical-align: top;
+  margin-left: 17%;
+}
+
+.roadDashboardDiv12 {
+  display: block;
+  height: 18px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: center;
+  /* vertical-align: bottom; */
+}
+
+.roadDashboardDiv13 {
+  display: block;
+  height: 30px;
+  width: 25px;
+  border: dashed 1px #ddd;
+  border-left: 0;
+  border-bottom: 0;
+  border-top-right-radius: 12px;
+}
+
+.roadDashboardDiv14 {
+  display: block;
+  height: 20px;
+  margin-left: 24px;
+  width: 25px;
+  border: dashed 1px #ddd;
+  border-right: 0;
+  border-top: 0;
+  border-bottom-left-radius: 12px;
+  text-align: right;
+}
+
+.roadDashboardDiv15 {
+  margin-top: 11px;
+  margin-left: 24px;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.roadDashboardTd2 {
+  vertical-align: top;
+  font-size: 9px;
+  width: 77%;
+  position: absolute;
+}
+
+.roadTimeGraphHtml {
+  width: 92%;
+  border-top: solid 1px #ddd;
+  font-size: 11px;
+}
+
+.circle_green_right {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid #99db70;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  position: relative;
+  top: -16px;
+  float: right;
+}
+
+.circle_red_right {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid #ee3124;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  /*top: -6px;
+            right: -8px;*/
+  position: relative;
+  top: -16px;
+  float: right;
+}
+
+.circleRed {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid #ee3124;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  top: -4px;
+  left: -8px;
+  position: relative;
+}
+
+.circleRedHover {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid #ee3124;
+  width: 12px;
+  height: 12px;
+  background-color: #ee3124;
+  top: -4px;
+  left: -8px;
+  position: relative;
+}
+
+.marineDashboardShipmentDiv1 {
+  display: block;
+  height: 16px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: center;
+  /* vertical-align: bottom; */
+}
+
+.marineDashboardShipmentDiv2 {
+  display: block;
+  height: 16px;
+  width: 100%;
+  text-align: left;
+  background-color: transparent !important;
+  /* vertical-align: top; */
+}
+
+.marineDashboardShipmentDiv2Red {
+  display: block;
+  height: 16px;
+  width: 100%;
+  text-align: left;
+  background-color: #fbd5d2 !important;
+}
+
+.marineDashboardShipmentDiv3 {
+  display: inline-block;
+  background-color: transparent !important;
+  width: 45%;
+  /* float: left; */
+}
+
+.marineDashboardShipmentDiv4 {
+  display: inline-block;
+  background-color: transparent !important;
+  width: 45%;
+  /* float: right; */
+  text-align: right;
+}
+
+.marineDashboardShipmentDiv5 {
+  z-index: 1;
+  height: 40px;
+  text-align: center;
+  background-color: #fff4d4;
+  border-bottom: dashed 1px #d0d0d0;
+  position: absolute;
+}
+
+.marineDashboardShipmentDiv6 {
+  display: block;
+  height: 16px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  /* vertical-align: top; */
+}
+
+.marineDashboardShipmentDiv7 {
+  display: inline-block;
+  background-color: transparent !important;
+  width: 45%;
+  /* float: left; */
+}
+
+.marineDashboardShipmentDiv8 {
+  display: inline-block;
+  background-color: transparent !important;
+  width: 45%;
+  /* float: right; */
+  text-align: right;
+}
+
+.icon-SPECIFICATIONS-20:before {
+  /*leakage icon*/
+  content: "\e904";
+}
+
+.marineDashboardShipmentSpan1 {
+  z-index: 15;
+  position: absolute;
+  font-size: 15px;
+  color: #009ada;
+  cursor: pointer;
+}
+
+.LiveShipmentBar {
+  border: 1px dotted #303030;
+  background-color: transparent;
+  background-image: linear-gradient(135deg,
+      transparent 24%,
+      rgba(0, 0, 0, 0.3) 25%,
+      rgba(0, 0, 0, 0.3) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(0, 0, 0, 0.3) 75%,
+      rgba(0, 0, 0, 0.3) 76%,
+      transparent 77%,
+      transparent);
+
+  background-size: 10px 10px;
+  display: block;
+  height: 8px;
+  width: 100%;
+}
+
+.ShipmentBar {
+  border: 1px dotted #303030;
+  background-color: #808080;
+  display: block;
+  height: 8px;
+  width: 100%;
+}
+
+.marineDashboardQueuedTransactionsDiv2 {
+  position: absolute;
+  border-right: 1px dotted grey;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 185px;
+  margin-right: 10px;
+}
+
+.marineDashboardQueuedTransactionsDiv3 {
+  position: absolute;
+  margin-bottom: 10px;
+  width: 185px;
+  margin-left: 10px;
+}
+
+.roadDashboardQueuedTitle {
+  border-bottom: 1px solid black;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.railDashboardShiftmentHtmlDiv1 {
+  z-index: 1;
+  cursor: pointer;
+  border-bottom: dashed 1px #d0d0d0;
+  position: absolute;
+}
+
+.railDashboardShiftmentHtmlDiv2 {
+  display: block;
+  height: 12px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: center;
+  /* vertical-align: bottom; */
+}
+
+.railDashboardShiftmentHtmlDiv3 {
+  display: block;
+  height: 16px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: left;
+  /* vertical-align: top; */
+}
+
+.railDashboardShiftmentHtmlDiv4 {
+  display: inline-block;
+  background-color: transparent !important;
+  width: 45%;
+  /* float: left; */
+}
+
+.railDashboardShiftmentHtmlDiv5 {
+  display: block;
+  height: 16px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: center;
+  /* vertical-align: bottom; */
+}
+
+.railDashboardShiftmentHtmlDiv6 {
+  display: block;
+  height: 16px;
+  width: 100%;
+  text-align: left;
+  background-color: transparent !important;
+  /* vertical-align: top; */
+}
+
+.railDashboardShiftmentHtmlDiv6Red {
+  display: block;
+  height: 16px;
+  width: 100%;
+  text-align: left;
+  background-color: #fbd5d2 !important;
+}
+
+.railDashboardShiftmentHtmlDiv7 {
+  display: inline-block;
+  background-color: transparent !important;
+  width: 45%;
+  /* float: left; */
+}
+
+.railDashboardShiftmentHtmlDiv8 {
+  display: inline-block;
+  background-color: transparent !important;
+  width: 45%;
+  /* float: right; */
+  text-align: right;
+}
+
+.HeapBar {
+  border: 1px dotted #808080;
+  /*background-color: #E8DEE7;*/
+  background-color: #b5e7fc;
+  display: block;
+  height: 16px;
+  width: 100%;
+}
+
+.railDashboardShiftmentHtmlSelect1 {
+  display: block;
+  width: 100%;
+  text-align: right;
+  height: 40px;
+  padding: 10px 5px;
+  margin-right: 2px;
+}
+
+.railDashboardDeviceStatusDiv1 {
+  display: block;
+  width: 100%;
+  text-align: right;
+  height: 40px;
+  margin-right: 2px;
+  padding: 10px 5px;
+}
+
+/* modefie */
+.railDashboardLeftTd {
+  width: 12%;
+  border-right: solid 1px #d0d0d0;
+  padding: 0 !important;
+  vertical-align: top;
+}
+
+.marineDashboardLeftTd {
+  width: 12%;
+  border-right: solid 1px #d0d0d0;
+  padding: 0 !important;
+  vertical-align: top;
+}
+
+.marineDashboardCompartmentDiv {
+  /* color: #333; */
+  float: left;
+  width: 6.5%;
+  text-align: center;
+}
+
+.roadDashboardCompartmentDiv {
+  /* color: #333; */
+  float: left;
+  width: 9.5%;
+  text-align: center;
+}
+
+.marineGraphTimeShort {
+  /* display: inline-block; */
+  float: left;
+  margin-top: 20px;
+  height: 10px;
+}
+
+.marineGraphTimeLong {
+  /* display: inline-block; */
+  float: left;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.heap {
+  display: inline-block;
+  height: 40px;
+  /*float: left;*/
+  vertical-align: top;
+  background-color: #eee;
+}
+
+.failureship,
+.Heapfailureship {
+  /* display: inline-block; */
+  height: 40px;
+  float: left;
+  vertical-align: top;
+  /*background-color: #FBD5D2;*/
+  background-color: transparent;
+}
+
+.shipment,
+.Heapshipment {
+  display: inline-block;
+  height: 40px;
+  /*float: left;*/
+  vertical-align: top;
+  background-color: transparent;
+}
+
+.railDashboardTransactionHTMLDiv1 {
+  display: block;
+  height: 16px;
+  background-color: transparent !important;
+  width: 100%;
+  text-align: center;
+  /* vertical-align: bottom; */
+}
+
+.railDashboardTransactionHTMLDiv2 {
+  display: block;
+  height: 16px;
+  width: 100%;
+  text-align: left;
+  /* vertical-align: top; */
+}
+
+.railDashboardTransactionHTMLDiv3 {
+  /* display: inline-block; */
+  background-color: transparent !important;
+  width: 45%;
+  float: left;
+}
+
+.railDashboardTransactionHTMLDiv4 {
+  /* display: inline-block; */
+  background-color: transparent !important;
+  width: 45%;
+  float: right;
+  text-align: right;
+}
+
+.dashboardLeakageHoverDiv1 {
+  position: absolute;
+  border-right: 1px dotted grey;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 185px;
+  margin-right: 10px;
+  font: normal 11px Arial;
+  width: 185px;
+  margin-left: 10px;
+}
+
+.dashboardLeakageHoverDiv2 {
+  position: absolute;
+  margin-bottom: 10px;
+  width: 185px;
+  margin-left: 10px;
+  font: normal 11px Arial;
+}
+
+.dashboardLeakageHoverDiv3 {
+  margin-bottom: 10px;
+  font: normal 11px Arial;
+}
+
+.dashboardLeakageHoverDiv4 {
+  margin-top: 10px;
+  font: normal 11px Arial;
+}
+
+.dashboardLeakageHoverDiv5 {
+  margin-bottom: 10px;
+  font: normal bold 14px Arial;
+}
+
+.icon-SPECIFICATIONS-30:before {
+  content: "\e909";
+}
+
+.marineDashboardCompartmentHoverDetailsDiv1 {
+  border-bottom: 1px solid #a0a0a0;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  padding-bottom: 2px;
+}
+
+.marineDashboardCompartmentHoverDetailsDiv2 {
+  border-bottom: 1px solid #a0a0a0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 2px;
+}
+
+.marineDashboardCompartmentHoverDetailsSpan1 {
+  font: bold 14px Arial;
+  color: #404040;
+}
+
+.marineDashboardCompartmentHoverDetailsSpan2 {
+  font: 11px Arial;
+  color: #707070;
+}
+
+.marineDashboardCompartmentHoverDetailsSpan3 {
+  font: normal 11px Arial;
+  color: #707070;
+}
+
+.marineDashboardDeviceHtmlDiv1 {
+  /* display: inline-block; */
+  height: 40px;
+  float: left;
+  vertical-align: top;
+  background-color: transparent !important;
+  position: absolute;
+}
+
+.marineDashboardDeviceHtmlDiv2 {
+  display: block;
+  height: 10px;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.marineDashboardDeviceHtmlDiv3 {
+  display: block;
+  height: 4px;
+  background-color: #ee3124;
+  width: 100%;
+}
+
+.marineDashboardDeviceHtmlDiv4 {
+  display: block;
+  height: 26px;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.marineDashboardDeviceHtmlDiv5 {
+  /* display: inline-block; */
+  height: 30px;
+  float: left;
+  vertical-align: top;
+  background-color: transparent !important;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+}
+
+.marineDashboardDeviceHtmlDiv6 {
+  display: block;
+  height: 10px;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.marineDashboardDeviceHtmlDiv7 {
+  display: block;
+  height: 4px;
+  background-color: #99db70;
+  width: 100%;
+}
+
+.marineDashboardDeviceHtmlDiv8 {
+  display: block;
+  height: 36px;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.marineDashboardDeviceStatusHoverDiv1 {
+  height: 30px;
+  border-bottom: 1px solid #a0a0a0;
+  display: flex;
+  font-weight: bold;
+  font: 14px;
+}
+
+.marineDashboardDeviceStatusHoverTable1 {
+  font: normal 11px Arial;
+  color: #707070;
+}
+
+.tankFilling {
+  position: absolute;
+  bottom: 0;
+  /* left: 0.3px; */
+  width: 99%;
+  background-color: #9e9e9e;
+  /* border-radius: 20px/8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
+.dbtankDetails {
+  width: 175px;
+  position: absolute;
+  left: 60px;
+}
+
+.dbtankWidth {
+  width: 50px;
+  padding: 5px;
+}
+
+.dbtank {
+  margin: 10px;
+  position: relative;
+  width: 240px;
+  border: 1px solid #cccccc;
+}
+
+.dbthroughputChartPane {
+  max-height: 300px;
+}
+
+.dbthroughputChartPane.wj-flexchart {
+  padding: unset !important;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dbTankName {
+  padding: 5px;
+  /*color: #6e6e6e;*/
+  color: #606060;
+}
+
+.dbTankNameDisabled {
+  padding: 5px;
+  /*color: #6e6e6e;*/
+  color: #606060;
+}
+
+.dbTankDetails {
+  /*color: #666666;*/
+  color: #606060;
+  font-size: 12px;
+}
+
+.dbTankDetailsDisabled {
+  /*color: #666666;*/
+  color: #606060;
+  font-size: 12px;
+}
+
+.tpiMOTType {
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+.selectedtpiMOTType {
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+.font24 {
+  font-size: 24px !important;
+}
+
+.tpiSelectedMotPane {
+  border-bottom: 3px solid #1792e5;
+}
+
+.parameterLoader {
+  position: fixed;
+  top: 50vh;
+  z-index: 10;
+  left: 50%;
+}
+
+.weekend {
+  background-color: white;
+  width: 101.5%;
+  height: 600px;
+}
+
+.holidays {
+  background-color: white;
+  margin-left: -10px;
+  width: 101.5%;
+  height: 600px;
+}
+
+.weekendButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.viewPrint {
+  position: relative;
+  right: 16px;
+}
+
+.ResetButton {
+  background-color: #f47021 !important;
+  border: 0.0625rem solid #f47021 !important;
+}
+
+.shipmentTrailerAttributeAccordion {
+  width: 98% !important;
+  margin-left: 1% !important;
+  margin-bottom: 1% !important;
+}
+
+.shipmentTrailerTareWeightTable {
+  width: 99% !important;
+  margin-left: 0.5% !important;
+  margin-bottom: 1% !important;
+}
+
+.shipmentTrailerAccordion {
+  margin-bottom: 2% !important;
+}
+
+.communicationStatus-img {
+  margin-left: 46%;
+  margin-top: 3%;
+}
+
+.communicationStatusDot-img {
+  height: 19px;
+  width: 19px;
+  margin-right: 5px;
+}
+
+.commnicationHeaderRight {
+  margin-left: 83% !important;
+}
+
+.marineStatusLeftPane {
+  position: absolute;
+  right: -20rem;
+  width: 324px;
+  pointer-events: none;
+}
+
+.weekendDatePicker .cell-data-wrap {
+  padding: 0 0 0 0 !important;
+}
+
+/* .planneddate .input-label-message {
+  width: 155px !important;
+} */
+.readweightbutton {
+  margin-top: 1.6rem;
+  text-align: right;
+}
+
+.shipmentRecordWeightButtonDiv {
+  margin-top: 1.6rem;
+  text-align: right;
+}
+
+.shipmentRecordWeightButton {
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+  font-size: 13px !important;
+  letter-spacing: 0px !important;
+}
+
+.RecordWeightButton {
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+  font-size: 11px !important;
+  letter-spacing: 0px !important;
+}
+
+.shipmentRecordWeightOtherbuttons {
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  font-size: 13px !important;
+  letter-spacing: 0px !important;
+}
+
+.serverStatus .cell-data-wrap {
+  padding: 0 !important;
+}
+
+.planneddate .input-label {
+  min-width: 100px !important;
+}
+
+.checkboxSelect {
+  display: flex;
+  align-items: center;
+  padding-top: 15px !important;
+}
+
+/* .checkboxSelect > .ui.checkbox {
+  top: 30px;
+} */
+
+.sealCompartmentsPopUp {
+  margin-left: 0px !important;
+}
+
+.dashboardTableResults {
+  width: 100%;
+  border-top: solid 1px #d0d0d0;
+  font-size: 11px;
+  background-color: #f7f7f7;
+}
+
+.ui.table tr td,
+.ui.sortable tr td {
+  padding: 0.5rem 1rem !important;
+}
+
+.reportTable .ui.table thead th,
+.ui.sortable thead th {
+  font-size: 0.875rem;
+}
+
+.backButton {
+  border: 0.0625rem solid #111010 !important;
+}
+
+@media (min-width: 1024px) {
+  .colminWidth {
+    width: unset !important;
+  }
+}
+
+.colminWidth {
+  width: 150px;
+  padding: 0.571em 0.857em !important;
+}
+
+@media (min-width: 1024px) {
+  .tableScroll {
+    overflow-x: unset !important;
+  }
+}
+
+.tableScroll {
+  min-width: 100% !important;
+  /* max-width: 100% !important; */
+  width: 300px;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.marginRightZero {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+/* .detailsTable {
+  padding-left: 0px !important;
+} */
+.marginRightZero .col-12.detailsTable {
+  padding-left: 0px !important;
+  padding-right: 0 !important;
+}
+
+.flexRelative {
+  display: flex;
+  position: relative;
+}
+
+.detailsContainer .scuf-tab.ui.menu {
+  flex-wrap: wrap !important;
+}
+
+.accordion.ui.fluid {
+  margin-bottom: 1rem !important;
+}
+
+.honeywell-logo {
+  background-image: url(/src/CSS/honeywell-logo.svg) !important;
+}
+
+.secondarytable .p-datatable-wrapper {
+  min-height: unset !important;
+}
+
+.slotSummaryTable {
+  min-width: 810px;
+}
+
+.slotBlocksDispalyTablet {
+  min-width: 810px;
+}
+
+@media (min-width: 768px) {
+  .ViewShipmentStatusHeader h4 {
+    font-size: 0.8rem !important;
+  }
+
+  .MuiTimelineContent-root.MuiTimelineItem-content {
+    font-size: 0.75rem !important;
+  }
+
+  .ui.medium.button.secondary.ViewShipmentButton {
+    font-size: 0.5rem !important;
+  }
+
+  .createSlotHeader {
+    font-size: 1rem !important;
+  }
+
+  .createSlotModal {
+    width: 400px !important;
+    height: 400px !important;
+    overflow: auto;
+  }
+
+  .createSlotModalFooter {
+    padding: 5rem 0 0 !important;
+  }
+
+  .modifySlotModalFooter {
+    padding: 5rem 0 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .tableSlotScroll {
+    overflow-x: hidden !important;
+  }
+
+  .ViewShipmentStatusHeader h4 {
+    font-size: 1rem !important;
+  }
+
+  .MuiTimelineContent-root.MuiTimelineItem-content {
+    font-size: 1rem !important;
+  }
+
+  .ui.medium.button.secondary.ViewShipmentButton {
+    font-size: 0.6rem !important;
+  }
+
+  /* .createSlotModal {
+    width: 33% !important;
+  } */
+  .modifySlotModalFooter {
+    padding: 2rem 0 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .createSlotModal {
+    width: 33% !important;
+    height: auto !important;
+    overflow: auto;
+  }
+
+  .createSlotModalFooter {
+    padding: 1.5rem 0 0 !important;
+  }
+
+  .createSlotHeader {
+    font-size: 1.5rem !important;
+  }
+}
+
+.tankFillingWithoutColor {
+  position: absolute;
+  bottom: 0;
+  /* left: 0.3px; */
+  width: 99%;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  /*background-color: #9e9e9e;
+   border-radius: 20px/8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
+.dbtankForMonitor {
+  margin: 10px;
+  position: relative;
+  width: 370px;
+  border: 1px solid #cccccc;
+  height: 220px;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+}
+
+.dbtankForMonitorDisabled {
+  margin: 10px;
+  position: relative;
+  width: 370px;
+  border: 1px solid #cccccc;
+  height: 220px;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+}
+
+.dbtankForMonitorDisabled::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #606060;
+  width: 420px;
+  /*transform: rotate(45deg);*/
+  transform: rotate(31deg);
+  transform-origin: top left;
+}
+
+.tankFilledForMonitor {
+  padding: 0;
+  border: 1px solid #9e9e9e;
+  border-radius: 50%/20%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 130px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+
+.dbtankWidthForMonitor {
+  width: 120px;
+  padding: 10px;
+}
+
+.dbtankDetailsForMonitor {
+  width: 220px;
+  position: absolute;
+  left: 130px;
+}
+
+.tankIsHighLight {
+  font-weight: bold !important;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flexWrapTankMonitor {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.deviceskipLocalLoadFetch {
+  position: sticky !important;
+  bottom: 0vh;
+  z-index: 2;
+  background-color: #f7f7f7;
+  padding-top: 15px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.starttime .ui.red.circular.empty.label.badge.circle-padding {
+  margin-left: 3px !important;
+}
+
+.detailsTable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead>tr>th {
+  padding: 5px 5px !important;
+}
+
+.PAIcon {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  padding: 8px;
+}
+
+.PAIconContainer {
+  display: flex;
+  margin-top: 5%;
+  justify-content: flex-end;
+}
+
+.PAItems .cell-data-wrap {
+  padding: 0 0 0 0 !important;
+}
+
+.Monitor .ui.single-input.fluid .input-box {
+  right: -21.5rem !important;
+  width: 25% !important;
+  top: -1.6rem !important;
+  height: 10px !important;
+}
+
+.detailsTable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead>tr>th {
+  padding: 5px 5px !important;
+}
+
+.detailsTable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr>td .cell-data-wrap {
+  padding: 1px 6px !important;
+}
+
+.lookupdataradiobutton .ui.radio.checkbox {
+  margin-left: 10px !important;
+}
+
+.lookupdataexpandtabledescription {
+  width: 40rem !important;
+}
+
+.lookupdataexpandtablereadonly {
+  width: 7rem !important;
+}
+
+.Lookupdatacode {
+  width: 30% !important;
+}
+
+.searchbar {
+  margin-left: 6px;
+  margin-bottom: 6px;
+  border: 0px solid;
+}
+
+.disabledCell {
+  color: #6e6e6e !important;
+  background-color: #f7f7f7 !important;
+}
+
+.colminPAWidth {
+  width: 90px;
+  padding: 0.571em 0.857em !important;
+}
+
+/* Grapecity Grid Styles*/
+.wj-btn {
+  cursor: pointer;
+  outline: none;
+  border-radius: 0;
+  transition: border-color 0.5s ease, background 0.5s ease, color 0.5s ease;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Honeywell Sans Web", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4375rem;
+  padding-bottom: 0.4375rem;
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.375rem;
+}
+
+.wj-columnfiltereditor .wj-btn {
+  font-weight: 600 !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0.4375rem !important;
+  padding-bottom: 0.4375rem !important;
+  border-radius: 0 !important;
+  font-weight: 600;
+}
+
+.wj-flexgrid .wj-cell {
+  padding: 10px;
+  font-family: "Honeywell Sans Web", Arial, Helvetica, sans-serif;
+  border-left: none;
+  border-right: none;
+}
+
+.wj-input input.wj-form-control {
+  font-family: "Honeywell Sans Web", Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 1.375rem;
+  border-radius: 0;
+  height: 2.5rem;
+  transition: border-color 150ms ease-in;
+  box-sizing: border-box;
+  padding: 0.6875rem 0.4375rem;
+  z-index: 1;
+  position: relative;
+  width: 12rem;
+}
+
+.wj-filter-on .wj-glyph-filter {
+  color: #45a7ea;
+}
+
+.wj-sort-desc .wj-glyph-down,
+.wj-sort-asc .wj-glyph-up {
+  color: #45a7ea;
+  margin-left: 10px;
+}
+
+.wj-cell.wj-header {
+  font-weight: 500 !important;
+}
+
+.wj-btn .wj-glyph-down {
+  opacity: 1 !important;
+}
+
+.column-picker-icon {
+  cursor: pointer;
+  color: #ff8754;
+  margin: 3px;
+}
+
+.column-picker-div {
+  display: none;
+}
+
+.wj-listbox.column-picker {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 10px;
+  columns: 4;
+  /* IE fallback */
+  padding: 12px;
+  margin-left: 12px;
+  margin-top: 26px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wj-listbox .wj-listbox-item>label {
+  display: block;
+  margin: 0 0 3px 0;
+}
+
+.wj-listbox .wj-listbox-item.wj-state-selected {
+  background: transparent;
+  color: inherit;
+}
+
+.wj-listbox .wj-listbox-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.wj-listbox .drop-marker {
+  position: absolute;
+  background: #0085c7;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.wj-listbox.column-picker {
+  margin-top: 15px !important;
+}
+
+.wj-grouppanel .wj-groupmarker .wj-remove,
+.wj-grouppanel .wj-groupmarker span {
+  opacity: 0.75 !important;
+}
+
+.doneButton {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.logDateTime .datetime-time input {
+  width: 7.5rem !important;
+}
+
+.logDateTime .datetime-date input {
+  width: 10rem !important;
+}
+
+.wj-row[aria-selected="true"] .wj-cell {
+  border-top: 1px solid #1892e5 !important;
+  border-bottom: 1px solid #1892e5 !important;
+}
+
+.wj-row[aria-selected="true"] .wj-cell:first-child {
+  border-left: 5px solid #1892e5 !important;
+}
+
+.wj-row[aria-selected="true"] .wj-cell:last-child {
+  border-right: 1px solid #1892e5 !important;
+}
+
+.btnIcon {
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+.btnArrowRight {
+  margin-top: 3.5px;
+  padding: 0px !important;
+  font-weight: bold !important;
+}
+
+.wj-filtertype a:not(.wj-state-disabled) {
+  opacity: 0.6;
+}
+
+.wj-filtertype a.wj-state-disabled {
+  opacity: 1;
+}
+
+.ViewLookupDetailsButton {
+  align-self: center;
+  min-width: 15rem !important;
+  margin-bottom: 1rem !important;
+  margin-left: 1.5rem !important;
+  position: absolute;
+  bottom: 0 !important;
+}
+
+.buttonstyle .row .col-3 {
+  margin-top: -5rem !important;
+}
+
+.notificationTabAlignment div div.ui.pointing.secondary.ui.scuf-tab.menu .item {
+  border: 2px solid #0000002b !important;
+  width: 20rem;
+  text-align: left !important;
+  padding: 5px 2px 5px 4px !important;
+  /* border-left: 2px solid #0000002b !important;  */
+  margin: 0px 0px 0px 0px !important;
+}
+
+.notificationTabAlignment div div.ui.pointing.secondary.ui.scuf-tab.menu {
+  padding: 1px 1px 1px 9px !important;
+}
+
+.notificationTabAlignment div.ui.pointing.secondary.ui.scuf-tab.menu .active.item {
+  border-bottom: 0.2rem solid #0c8ee5 !important;
+  background-color: #d3d3d385;
+}
+
+.notificationTabAlignment {
+  margin-left: 0.5rem;
+}
+
+.notificationgroupstatus {
+  width: 20% !important;
+}
+
+.ReturnToNormal {
+  width: 5rem !important;
+}
+
+.columnsize {
+  width: 7rem !important;
+}
+
+.bayAllocationButtonWrapper {
+  border: #f0f0f0 !important;
+  background-color: #f0f0f0 !important;
+}
+
+.bayAllocationtd {
+  /* width: 20% !important; */
+  width: 170px;
+  min-width: 170px;
+  max-width: 170px;
+  min-height: 120px;
+  max-height: 120px;
+  vertical-align: bottom !important;
+  height: 120px;
+  border: 1px outset #f0f0f0 !important;
+}
+
+.bayAllocationInfoIcon {
+  float: right
+}
+
+.bayAllocationButton {
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+
+.bayAllocationLargeButton {
+  margin-left: 1%;
+  margin-top: 1%;
+  padding: 0 0.5% 0 0.5%;
+  cursor: pointer;
+  margin-bottom: 1%;
+}
+
+.bayAllocationButtonImage {
+  padding-left: 25%;
+}
+
+.baySearcbPosition {
+  padding-left: 70%;
+}
+
+.unallocatedShipmentInfoIcon {
+  padding-left: 12%;
+}
+
+.selectedUnalloctedShipment {
+  background-color: #e0e0e0 !important;
+  background: #e0e0e0 !important;
+  border-color: #1792e5 !important;
+  border-left: 0.25rem solid !important;
+}
+
+.tdSelected {
+  border-color: #1792e5 !important;
+  border-width: 2px !important;
+}
+
+.bayAllocationButtonDisable {
+  margin-left: 1%;
+  margin-top: 1%;
+  padding: 1% 2% 0 2%;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.bayAllocationLargeButtonDisable {
+  margin-left: 1%;
+  margin-top: 1%;
+  padding: 0 0.5% 0 0.5%;
+  pointer-events: none;
+  opacity: 0.4;
+  margin-bottom: 1%;
+}
+
+.bayAllocationUnAllocatedDiv {
+  width: 20%;
+}
+
+.bayAllocationDiv {
+  width: 80%;
+  float: right;
+  margin-left: 5px;
+}
+
+.bayAllocationUnAllocatedDataDiv {
+  z-index: 1000;
+  height: calc(91vh - 110px) !important;
+  border: 1px solid #aaa8a9;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.bayAllocationFontSize {
+  font-size: 0.7rem;
+}
+
+.dashboardCard {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  font-family: "Honeywell Sans Web", Arial, Helvetica, sans-serif;
+  margin: 5px;
+  box-shadow: 0px 4px 8px rgb(0 12 24 / 40%);
+  /* border-radius: 4px; */
+}
+
+.dashboardCardHeader {
+  padding: 8px;
+  height: 40px !important;
+}
+
+.dashboardCardContent {
+  padding: 5px 0px !important;
+  height: 100%;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dashboardCard .wj-flexchart {
+  height: 100%;
+  border: none !important;
+  margin-bottom: 0px !important;
+  padding: 5px 5px !important;
+}
+
+.wj-row .wj-cell:not(.wj-header, .wj-group) {
+  cursor: pointer;
+}
+
+.wj-row:hover .wj-cell:not(.wj-group, .wj-header) {
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.bayButtonPosition {
+  position: sticky !important;
+  bottom: 0vh;
+  z-index: 2;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-top: 7px;
+}
+
+.bayAllocationDiv .detailsContainer .row .col-4 .ui.pagination {
+  border: 0 !important;
+}
+
+.atgmasterinput .col-12 .ui.single-input .input-wrap {
+  position: absolute;
+  margin-left: 15rem;
+  margin-top: -2rem !important;
+  width: 50% !important;
+}
+
+.tankcode .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr>td {
+  line-height: 2.2rem !important;
+}
+
+.disablereset {
+  background-color: #a0a0a0 !important;
+  border-color: #a0a0a0 !important;
+  color: #fff !important;
+}
+
+.fixedWidth {
+  width: 16rem !important;
+}
+
+.masterDeviceConfigDevices {
+  width: 15rem;
+  float: left;
+}
+
+.masterDeviceTransportType {
+  width: 15rem !important;
+  float: right
+}
+
+.bayAllocationContainer {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.bayAllocationDivContainer {
+  display: grid;
+}
+
+.bayTypeIconPosition {
+  margin-left: 5px;
+  margin-top: -2px;
+}
+
+.bayAllocationImagePosition {
+  width: 100%;
+}
+
+.bayAllocationButtonRow {
+  margin-top: -0.5rem;
+  justify-content: flex-end !important;
+  margin-right: 1px !important;
+}
+
+.carousel-back-button {
+  left: 0;
+  color: white;
+}
+
+.carousel-next-button {
+  right: 0;
+  color: white;
+}
+
+.carousel-back-button,
+.carousel-next-button {
+  border: none !important;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  transform: translateY(-50%);
+}
+
+.carousel-back-button:hover:enabled,
+.carousel-next-button:hover:enabled {
+  border: 1px solid rgb(0, 0, 0, 0.6);
+  background: rgb(0, 0, 0, 0.6);
+}
+
+.carousel-back-button:disabled,
+.carousel-next-button:disabled {
+  display: none;
+}
+
+.carousel .slider div:not(.dashboardCard, .dashboardCardContent, .dashboardCardHeader, .dashboardCardHeader div, .dashboardCardContent div) {
+  position: unset !important;
+  height: auto !important;
+  padding-bottom: unset !important;
+}
+
+.carousel .slider div .carousel__inner-slide {
+  position: unset;
+}
+
+.carousel .slider .dashboardCard {
+  width: 98% !important;
+  height: 230px !important;
+}
+
+.dashboardCard .wj-flexchart .wj-label,
+.dashboardCard .wj-flexchart .wj-title,
+.dashboardCard .wj-flexchart .wj-data-label {
+  font-size: 11px;
+}
+
+.dashboardCard .wj-flexchart .wj-header .wj-title {
+  font-size: 12px;
+}
+
+.dashboardIcon {
+  font-weight: 600 !important;
+  font-size: 13px !important;
+}
+
+.bullet {
+  margin-top: 2px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.filledBullet {
+  background-color: #7fb238;
+  height: 7px;
+  border-radius: 5px;
+  animation-name: bulletAnimation;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+@keyframes bulletAnimation {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.dashboardCardContent .dashboardCharts {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.bulletChart {
+  height: auto;
+  display: table;
+  width: 100%;
+  line-height: 10px;
+  table-layout: fixed;
+}
+
+.dashboardCardContent .bulletChart,
+.dashboardCardContent .wijmoCharts {
+  height: 100%;
+}
+
+.row .col-12.col-md-3.col-lg-3.customerInventoryPagination .ui.pagination {
+  border: 0 !important;
+}
+
+i.carousel-next-prev-icon {
+  font-size: 18px !important;
+}
+
+.dashboardExport {
+  padding: .4375rem 1.25rem !important;
+}
+
+.dashboardDatePicker input {
+  height: 38px !important;
+}
+
+.cardDetailsPopup .header {
+  height: 40px !important;
+  font-size: 1.125rem !important;
+}
+
+.cardDetailsPopup .h-icon {
+  font-weight: 600 !important;
+}
+
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: 0 !important;
+}
+
+.customerInventoryGridRow {
+  margin-top: 5px;
+  align-items: flex-start !important;
+}
+
+.bayQueueMonitorContainer .ui.pagination {
+  border: 0 !important;
+}
+
+.Widget_NoData {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  font-size: 12px;
+}
+
+.bayQueueMonitorContainer {
+  display: grid;
+}
+
+.kpiSummaryContainer .kpiSummaryBottomSpace {
+  padding-bottom: 1rem;
+}
+
+.fieldset {
+  border-top: 1px solid Black;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 98%;
+}
+
+.legend {
+  color: Black;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wj-control.wj-gauge {
+  margin: auto;
+  padding-top: 2%;
+  height: auto;
+  width: 50%;
+}
+
+.dashboardCardContent .wj-control.wj-gauge {
+  width: auto;
+  height: 100%;
+  padding: 2% 5%;
+}
+
+.wj-gauge .wj-face path {
+  stroke: none !important;
+}
+
+/* width */
+.dashboardCard ::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.dashboardCard ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.dashboardCard ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.dashboardCard ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.isModifiedCell {
+  background-color: #e0e0e0 !important;
+}
+
+.roleDatatableHeight>.ui.forge-datatable-wrap.search>.p-datatable.p-component>.p-datatable-wrapper {
+  height: 320px !important;
+  overflow: auto;
+}
+
+.autherrormsg {
+  color: #BE271C;
+  padding: 1rem !important;
+  margin-top: -3rem;
+}
+
+.dashboardDatePicker .calendar-overlay {
+  transform: translateX(calc(0% - 10.25rem)) translateY(calc(100% + 0.25rem)) !important
+}
+
+.stacked-bullet-chart {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.stacked-bullet-chart h1,
+.blockChart h1 {
+  font-weight: 300 !important;
+}
+
+.stackedBullets {
+  height: 5px;
+  animation-name: bulletAnimation;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+.vertical-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.stack-bullet-label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+  font-weight: 300;
+  text-align: center;
+  font-size: 10px;
+}
+
+.stacked-bullet-header,
+.block-chart-label {
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  font-size: 10px;
+  color: #909090;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 12px;
+  /* introduce ellipsis after two lines of text */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.vertical-align-charts {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.blockChart {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.block-chart-label {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600 !important;
+}
+
+.compColmiddle {
+  vertical-align: middle !important;
+}
+
+.slider-wrap.fluid {
+  width: 100% !important
+}
+
+.roadGraphDurationDesc {
+  width: calc(100% - 140px);
+  display: flex;
+  text-align: end;
+}
+
+.roadGraphMarkerDesc,
+.marineDurationMarker {
+  width: calc(100% - 110px);
+  display: flex;
+  text-align: end;
+  padding-right: 25px;
+}
+
+.marineDurationDesc {
+  width: calc(100% - 125px);
+  display: flex;
+  text-align: end;
+}
+
+.iconBtn {
+  height: 40px !important;
+  padding: 1px 6px !important;
+}
+
+.COAAssignment-Contener {
+  border: 1px solid #d0d0d0 !important;
+  padding: 0px;
+  margin: 5px -10px 0px 0px !important;
+}
+
+.COAAssignment-Contener-Margin {
+  margin-top: 10px;
+}
+
+.COAAssignment-Contener-Padding {
+  padding-bottom: 0px !important;
+}
+
+.COAAssignment-TagName {
+  font-size: 15px;
+}
+
+/* @media (max-width: 1024px) {
+  .halfbtn {
+    max-width: 100% !important;
+    padding: 8px 10px !important;
+  }
+} */
+
+.border-radius-20 {
+  border-radius: 20px !important;
+}
+
+.mobile-pending-transaction-datatable {
+  margin: 0 10px;
+  width: calc(100vw - 20px);
+  overflow: auto;
+}
+
+.mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead {
+  height: 60px;
+}
+
+.mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-row {
+  height: 60px !important;
+}
+
+.mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tr .mobile-pending-transaction-product tr.p-datatable-row {
+  height: 35px !important;
+}
+
+.mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-row td {
+  vertical-align: middle;
+}
+
+.mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead th {
+  vertical-align: middle;
+}
+
+.mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead .p-column-title {
+  font-size: 16px !important;
+}
+
+.mobile-large-font-datable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr>td {
+  font-size: 16px !important;
+}
+
+.mobile-half-width-card {
+  height: 100px;
+  width: 50%;
+}
+
+.mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-selection-column {
+  width: 0;
+  padding: 0 !important;
+}
+
+.mobile-pending-transaction-datatable .button-content {
+  font-size: 10px !important;
+  min-width: 70px;
+}
+
+.mobile-slot-button-div .button-content {
+  font-size: 8px !important;
+}
+
+.mobile-pending-transaction-datatable .terminal-icon {
+  text-align: center;
+}
+
+.mobile-pending-transaction-datatable .terminal-text {
+  text-align: center;
+}
+
+.mobile-pending-transaction-datatable .header-transaction-code {
+  padding-left: 5px !important;
+}
+
+.mobile-bay-card {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-slot {
+  overflow-x: auto;
+  width: calc(100% - 100px);
+}
+
+.mobile-booked-slot-card {
+  height: 100px;
+  width: 100px;
+  background: #7EB338;
+  flex-wrap: wrap;
+  margin-right: 2px;
+  color: #202020;
+}
+
+.mobile-tobebook-slot-card {
+  height: 100px;
+  width: 100px;
+  font-size: 12px;
+  flex-wrap: wrap;
+  margin-right: 2px;
+}
+
+.mobile-tobebook-slot-card .mobile-slot-button-div button {
+  min-width: 70px !important;
+}
+
+.mobile-slot-date-span {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.font-color-success {
+  color: #55e355;
+}
+
+.font-color-failed {
+  color: red;
+}
+
+.common-loading-modal {
+  background: transparent !important;
+}
+
+.common-loading-modal .scrolling {
+  background: transparent !important;
+}
+
+.common-loading-modal .color-overlay {
+  background: transparent !important;
+}
+
+.mobile-bread-crumb {
+  text-transform: none;
+}
+
+.mobile-pending-transaction-tr-datatable .ui.forge-datatable-wrap .p-datatable.hide-header tbody {
+  border-top: none !important;
+}
+
+.mobile-pending-transaction-tr-datatable .ui.forge-datatable-wrap .p-datatable table {
+  width: 100% !important;
+}
+
+.mobile-expanded-tr>td .cell-data-wrap {
+  color: #7EB338;
+}
+
+.mobile-padding-0-40 {
+  padding: 0 40px;
+}
+
+.mobile-padding-0-30 {
+  padding: 0 30px;
+}
+
+.mobile-padding-0-20 {
+  padding: 0 20px;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.mobile-terminal-message {
+  margin: 0 25px;
+}
+
+.mobile-margin-top-10 {
+  margin-top: 10px;
+}
+
+.mobile-margin-top-20 {
+  margin-top: 20px;
+}
+
+.mobile-margin-top-30 {
+  margin-top: 20px;
+}
+
+.mobile-margin-right-10 {
+  margin-right: 10px;
+}
+
+.mobile-align-items-start {
+  align-items: start;
+}
+
+.mobile-horizontal-center {
+  margin: 0 auto;
+}
+
+.mobile-tobebook-slot-card .ui.button.small {
+  height: 24px !important;
+  border-radius: 19px !important;
+  padding: 0 0.425rem !important;
+}
+
+.mobile-pending-transaction {
+  display: flex;
+  margin-top: 20px;
+  padding: 0 25px;
+}
+
+.mobile-pending-shipment-card {
+  width: 50%;
+  height: 100px;
+  margin-right: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgb(0 12 24 / 40%);
+}
+
+.mobile-pending-receipt-card {
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgb(0 12 24 / 40%);
+}
+
+.mobile-pending-transaction-text {
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 25px
+}
+
+.mobile-pending-transaction-number {
+  font-size: 12px;
+}
+
+.mobile-all-kpi-text {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.mobile-half-width {
+  width: 50%;
+}
+
+.mobile-left-card-radius {
+  border-radius: 7px 0 0 7px
+}
+
+.mobile-right-card-radius {
+  border-radius: 0 7px 7px 0;
+}
+
+.mobile-bay-queueinfo-baycode {
+  font-weight: bold;
+  font-size: 20px;
+  word-break: break-all;
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 10px
+}
+
+.mobile-bay-queueinfo-transactioncode {
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  word-break: break-all;
+  text-align: center;
+}
+
+.mobile-bay-queueinfo-queuenumber {
+  font-size: 20px;
+  word-break: break-all;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mobile-find-your-transaction {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px
+}
+
+.mobile-pending-transaction-text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px
+}
+
+.mobile-terminal-select {
+  padding: 0 20px;
+  margin: 20px 0;
+  width: 90%;
+  display: flex;
+}
+
+.mobile-terminal-select span {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.mobile-date-selector {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.mobile-bay-slot-div {
+  padding: 0 0px;
+  width: 100%;
+  padding-left: 20px
+}
+
+.mobile-bay-fp-list {
+  font-size: 20px;
+  font-weight: 600;
+  word-break: break-all;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-bay-not-compatible-tooltip {
+  font-size: 20px;
+  font-weight: 600;
+  word-break: break-all;
+  color: #BE271C;
+  width: 100%;
+}
+
+.mobile-bay-not-compatible-fp {
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 80px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.mobile-bay-not-compatible-fp i {
+  font-size: 10px !important;
+}
+
+.mobile-slot-time-text {
+  float: left;
+  margin-top: 25%;
+  margin-left: 33%
+}
+
+.mobile-slot-button-div {
+  float: left;
+  margin-top: 15px;
+  margin-left: 16%
+}
+
+.mobile-cancel-slot-icon {
+  float: right;
+  margin-right: 5px
+}
+
+.mobile-cancel-slot-icon i {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.mobile-booked-slot-icon {
+  float: left;
+  margin-top: 30%;
+  margin-left: 41%
+}
+
+.mobile-booked-slot-icon i {
+  font-size: 25px !important;
+}
+
+.mobile-booked-slot-timespan {
+  float: left;
+  margin-left: 12%;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.mobile-date-selector i {
+  font-size: 12px !important;
+}
+
+.mobileProductInventory {
+  padding: 5px 0px !important;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  /* border-radius: 4px; */
+}
+
+.mobileProductInventory .wijmoCharts {
+  height: 100%;
+}
+
+.mobileProductInventory .wj-flexchart {
+  height: 400px;
+  border: none !important;
+  margin-bottom: 12px;
+  background: #fff;
+  display: block;
+  background: 0 0;
+}
+
+.mobilePastTableHeader {
+  padding: 10px 10px 0px 10px;
+  border-Radius: 10px;
+  margin-bottom: 10px;
+}
+
+.mobilePastDate {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.mobilePastSearch {
+  padding: 10px;
+  margin: 10px;
+}
+
+.mobilePastHeaderRow {
+  margin-bottom: 1px;
+  font-size: 14px !important;
+}
+
+.mobilePastHeaderRow div {
+  padding-bottom: 10px !important;
+}
+
+.mobilePastHeaderRowContent {
+  padding-top: 10px;
+  border-bottom: rgb(221, 221, 221) 0.0625rem solid;
+}
+
+.mobilepastTableBottom {
+  padding: 5px 0px 5px 0px !important;
+}
+
+.mobilepastTableBottom div {
+  padding-bottom: 0px !important;
+}
+
+.mobilePastBOLButton {
+  font-size: 14px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .ui.small.modal {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .ui.page-header .page-header-menu.ui.menu .logo-text {
+    font-size: 14px !important;
+  }
+
+  .ui.page-header .page-header-menu.ui.menu .main-logo {
+    width: 6.5rem !important;
+  }
+
+  .ui.page-header .page-header-menu.ui.menu .item .themeIcon {
+    padding: 0 !important;
+  }
+
+  .ui.page-header .page-header-menu.ui.menu .item .themeIcon i {
+    font-size: 1rem !important;
+  }
+
+  .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable tbody.p-datatable-tbody>tr>td .cell-data-wrap {
+    padding: 0.5625rem 0.25rem 0.5625rem 0.25rem !important;
+  }
+
+  .mobile-pending-transaction-datatable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead>tr>th {
+    padding: .687rem 0.5rem .687rem 0.5rem !important
+  }
+
+  .mobile-pending-transaction-datatable .ui.button.small {
+    padding: 0 !important;
+    height: 26px !important;
+  }
+
+  .ui.modals .modal .content .button {
+    padding: 0.4375rem 1.4375rem;
+  }
+
+  .ui.small.modal {
+    width: 95% !important;
+  }
+
+  .dashboardCard {
+    margin: 5px 0px;
+  }
+}
+
+.mobileContainDetail .slotBlocksDispaly i {
+  font-size: 12px !important
+}
+
+.mobileContainDetail .mobilePastHeaderRowContent {
+  font-size: 12px !important;
+}
+
+.mobileContainDetail .mobilepastTableBottom {
+  font-size: 12px !important;
+}
+
+.mobileContainDetail .mobilepastTableBottom i {
+  font-size: 16px !important;
+  vertical-align: top !important;
+  margin-top: 2px;
+}
+
+html .sidebar-layout.no-icons>.contentContainer {
+  margin: 0 !important;
+}
+
+.product-demand-forecasting-date input {
+  width: 100% !important;
+}
+
+.product-demand-forecast-go-btn {
+  padding: .4375rem 1rem !important;
+}
+
+.tank-status-product-forecast {
+  margin: 0px 10px;
+}
+
+.tank-grid-product-forecast.p-datatable tbody.p-datatable-tbody>tr>td .cell-data-wrap,
+.forecast-details-table.p-datatable tbody.p-datatable-tbody>tr>td .cell-data-wrap,
+.tank-grid-product-forecast.p-datatable thead th,
+.forecast-details-table.p-datatable thead th {
+  padding: 5px !important;
+}
+
+.product-forecast-chart {
+  height: 400px !important;
+  margin: 0px !important;
+  outline: 1px solid #e4e4e4;
+}
+
+.product-forecast-chart .dashboardCardHeader h4 {
+  font-size: 14px !important;
+}
+
+.product-forecast-chart .wj-flexchart .wj-label {
+  font-size: .875rem;
+}
+
+.btn-download-product-forecast {
+  float: right;
+  padding: 0px 10px !important;
+}
+
+.session-timeout-popup .actions {
+  justify-content: space-evenly !important;
+}
+
+.session-timeout-popup .actions .button {
+  padding: 5px 30px !important;
+}
+
+/* disable browser icons */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}

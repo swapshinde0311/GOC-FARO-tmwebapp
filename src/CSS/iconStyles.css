@@ -1,0 +1,934 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?7w02m0');
+  src: url('fonts/icomoon.eot?7w02m0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7w02m0') format('truetype'),
+    url('fonts/icomoon.woff?7w02m0') format('woff'),
+    url('fonts/icomoon.svg?7w02m0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-KFactorUpload:before {
+  content: "\e9b6";
+}
+
+.icon-Aramco-Enterprise:before {
+  content: "\e9b7";
+}
+
+.icon-Bay_Queue:before {
+  content: "\e9b8";
+}
+
+.icon-DriverCustomer_Mapping:before {
+  content: "\e9b9";
+}
+
+.icon-TankerInspectionConfigurationStatus:before {
+  content: "\e9bf";
+}
+
+.icon-Processed_Order:before {
+  content: "\e9b3";
+}
+
+.icon-TankerInspectionStatus:before {
+  content: "\e9b4";
+}
+
+.icon-TemporaryOrderMapping:before {
+  content: "\e9b5";
+}
+
+.icon-ProductAllocation:before {
+  content: "\e9ba";
+}
+
+.icon-ActiveOrder:before {
+  content: "\e9bb";
+}
+
+.icon-EmergencyOrder:before {
+  content: "\e9bc";
+}
+
+.icon-Bay_Queue_Monitor:before {
+  content: "\e9bd";
+}
+
+.icon-Bay_Priority:before {
+  content: "\e9be";
+}
+
+.icon-TankerCustomerMapping:before {
+  content: "\e9c2";
+}
+
+.icon-Unloading:before {
+  content: "\e996";
+}
+
+.icon-Loading-Unloading:before {
+  content: "\e9ab";
+}
+
+.icon-Loading:before {
+  content: "\e9b1";
+}
+
+.icon-PlantList:before {
+  content: "\ea5c";
+}
+
+.icon-TemporaryOrder:before {
+  content: "\ea67";
+}
+
+.icon-icons_AuditPage:before {
+  content: "\ea27";
+}
+
+.icon-BusinessProcess:before {
+  content: "\ea28";
+}
+
+.icon-EmergencyOrderMapping:before {
+  content: "\ea4e";
+}
+
+.icon-LocalTransactionMapping:before {
+  content: "\ea53";
+}
+
+.icon-LocalTransactionUpload:before {
+  content: "\ea54";
+}
+
+.icon-Load-ID:before {
+  content: "\ea66";
+}
+
+.icon-ProductBranding:before {
+  content: "\ea6f";
+}
+
+.icon-OpenOrder:before {
+  content: "\ea72";
+}
+
+.icon-OperationalSettings:before {
+  content: "\ea73";
+}
+
+.icon-RackConfiguration:before {
+  content: "\ea75";
+}
+
+.icon-Rejected_Order:before {
+  content: "\ea76";
+}
+
+.icon-TankerInspectionQueue .path1:before {
+  content: "\ea7c";
+  color: rgb(1, 1, 1);
+}
+
+.icon-TankerInspectionQueue .path2:before {
+  content: "\ea7d";
+  margin-left: -1em;
+  color: rgb(1, 1, 1);
+}
+
+.icon-TankerInspectionQueue .path3:before {
+  content: "\ea7e";
+  margin-left: -1em;
+  color: rgb(1, 1, 1);
+}
+
+.icon-TankerInspectionQueue .path4:before {
+  content: "\ea7f";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+
+.icon-TankerInspectionQueue .path5:before {
+  content: "\ea80";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+
+.icon-TankerInspectionQueue .path6:before {
+  content: "\ea81";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+
+.icon-TankerInspectionQueue .path7:before {
+  content: "\ea82";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+
+.icon-TimeOutConfiguration:before {
+  content: "\ea8e";
+}
+
+.icon-DeallocateBay:before {
+  content: "\e935";
+}
+
+.icon-AllocateBay:before {
+  content: "\e9a8";
+}
+
+.icon-ClearBay:before {
+  content: "\e9a9";
+}
+
+.icon-Enterprise_Node:before {
+  content: "\e9aa";
+}
+
+.icon-NotificationSettings:before {
+  content: "\e9ac";
+}
+
+.icon-MoveToStart:before {
+  content: "\e9ad";
+}
+
+.icon-MoveToEnd:before {
+  content: "\e9ae";
+}
+
+.icon-MovePrevious:before {
+  content: "\e9af";
+}
+
+.icon-MoveNext:before {
+  content: "\e9b0";
+}
+
+.icon-SuggestBay:before {
+  content: "\e9b2";
+}
+
+.icon-ProductReconciliation:before {
+  content: "\e934";
+}
+
+.icon-Done:before {
+  content: "\e92e";
+}
+
+.icon-ExportXls:before {
+  content: "\e92f";
+}
+
+.icon-BOLOffice:before {
+  content: "\e92a";
+}
+
+.icon-DEU:before {
+  content: "\e92b";
+}
+
+.icon-EntryGate:before {
+  content: "\e92c";
+}
+
+.icon-ExitGate:before {
+  content: "\e92d";
+}
+
+.icon-EODAdministration:before {
+  content: "\e994";
+}
+
+.icon-OperatorDashboard:before {
+  content: "\e995";
+}
+
+.icon-ATGMasterConfiguration:before {
+  content: "\e997";
+}
+
+.icon-ShareholderInventory:before {
+  content: "\e998";
+}
+
+.icon-ShareholderAgreement:before {
+  content: "\e999";
+  color: #4f4f4f;
+}
+
+.icon-CustomerStockTransfer:before {
+  content: "\e99a";
+  color: rgb(79, 79, 79);
+}
+
+.icon-BayAllocationSCADAConfiguration:before {
+  content: "\e99e";
+}
+
+.icon-PipelineHeader:before {
+  content: "\e99f";
+}
+
+.icon-CustomerInventoryConfig:before {
+  content: "\e9a0";
+}
+
+.icon-BayQueueMonitor:before {
+  content: "\e9a1";
+}
+
+.icon-CustomerInventory:before {
+  content: "\e9a2";
+}
+
+.icon-WebPortalUserMap:before {
+  content: "\e9a3";
+}
+
+.icon-AllReports:before {
+  content: "\e949";
+}
+
+.icon-ShareholderAllocation:before {
+  content: "\e94a";
+}
+
+.icon-Device-Configuration:before {
+  content: "\e94b";
+}
+
+.icon-SMSConfiguration:before {
+  content: "\e95b";
+}
+
+.icon-EmailConfiguration:before {
+  content: "\e968";
+}
+
+.icon-ExchangePartner:before {
+  content: "\e969";
+}
+
+.icon-Groups:before {
+  content: "\e96f";
+}
+
+.icon-Language:before {
+  content: "\e97a";
+}
+
+.icon-LookupData:before {
+  content: "\e97c";
+}
+
+.icon-Notification:before {
+  content: "\e982";
+}
+
+.icon-PrinterConfiguration:before {
+  content: "\e983";
+}
+
+.icon-Messages:before {
+  content: "\e984";
+}
+
+.icon-ProcessConfiguration:before {
+  content: "\e985";
+}
+
+.icon-ProductReconciliationReport:before {
+  content: "\e986";
+}
+
+.icon-MasterDeviceConfiguration:before {
+  content: "\e987";
+}
+
+.icon-ReportSchedule:before {
+  content: "\e988";
+}
+
+.icon-Restriction:before {
+  content: "\e989";
+}
+
+.icon-Security:before {
+  content: "\e98a";
+}
+
+.icon-Roles:before {
+  content: "\e98b";
+}
+
+.icon-ShiftAdministration:before {
+  content: "\e98c";
+}
+
+.icon-SystemConfiguration:before {
+  content: "\e98d";
+}
+
+.icon-TankModeConfig:before {
+  content: "\e98e";
+}
+
+.icon-TankMonitorConfig:before {
+  content: "\e98f";
+}
+
+.icon-Tank-Shareholder-Association:before {
+  content: "\e990";
+}
+
+.icon-WeekendAndHoliday:before {
+  content: "\e991";
+}
+
+.icon-WeighbridgeMonitor:before {
+  content: "\e992";
+}
+
+.icon-Users:before {
+  content: "\e993";
+}
+
+.icon-Location-pin:before {
+  content: "\e945";
+}
+
+.icon-Enterprise-Icon:before {
+  content: "\e943";
+}
+
+.icon-Breadcrumb:before {
+  content: "\e907";
+}
+
+.icon-Master:before {
+  content: "\e908";
+}
+
+.icon-Transaction:before {
+  content: "\e941";
+}
+
+.icon-Finished-product:before {
+  content: "\e96c";
+}
+
+.icon-HSEInspection:before {
+  content: "\e96d";
+}
+
+.icon-HSE-configon:before {
+  content: "\e96e";
+}
+
+.icon-LeakageManualEntry:before {
+  content: "\e970";
+}
+
+.icon-MapTransactions:before {
+  content: "\e971";
+}
+
+.icon-Miscellanous:before {
+  content: "\e972";
+}
+
+.icon-Origin-tank:before {
+  content: "\e973";
+}
+
+.icon-Reports:before {
+  content: "\e974";
+}
+
+.icon-SiteView:before {
+  content: "\e975";
+}
+
+.icon-SlotBooking:before {
+  content: "\e977";
+}
+
+.icon-SlotConfiguration:before {
+  content: "\e978";
+}
+
+.icon-TankManualEntry:before {
+  content: "\e979";
+}
+
+.icon-UnitOfMeasure:before {
+  content: "\e97b";
+}
+
+.icon-Archive-system:before {
+  content: "\e97d";
+}
+
+.icon-Captain:before {
+  content: "\e97e";
+}
+
+.icon-Customer:before {
+  content: "\e97f";
+}
+
+.icon-Destination:before {
+  content: "\e980";
+}
+
+.icon-Enterprise-View-System-Status:before {
+  content: "\e981";
+}
+
+.icon-MarineTransloading:before {
+  content: "\e96a";
+}
+
+.icon-RailTransloading:before {
+  content: "\e96b";
+}
+
+.icon-BayAllocation:before {
+  content: "\e962";
+}
+
+.icon-General:before {
+  content: "\e963";
+}
+
+.icon-Marine-site-view:before {
+  content: "\e964";
+}
+
+.icon-Marine:before {
+  content: "\e965";
+}
+
+.icon-Road-site-view:before {
+  content: "\e966";
+}
+
+.icon-Bay-group-Config:before {
+  content: "\e940";
+}
+
+.icon-HSE-Inspection-Marine:before {
+  content: "\e942";
+}
+
+.icon-HSE-Inspection-Pipeline:before {
+  content: "\e947";
+}
+
+.icon-HSE-Inspection-Rail:before {
+  content: "\e948";
+}
+
+.icon-HSEInspectionMarine:before {
+  content: "\e961";
+}
+
+.icon-HSEInspectionPipeline:before {
+  content: "\e967";
+}
+
+.icon-HSEInspectionRail:before {
+  content: "\e976";
+}
+
+.icon-About:before {
+  content: "\e920";
+}
+
+.icon-AccessIDManagement:before {
+  content: "\e93c";
+}
+
+.icon-AutoIDAssociation:before {
+  content: "\e93d";
+}
+
+.icon-BaseProduct:before {
+  content: "\e93e";
+}
+
+.icon-BayGroupConfiguration:before {
+  content: "\e93f";
+}
+
+.icon-DeviceConfiguration:before {
+  content: "\e944";
+}
+
+.icon-HSEConfiguration:before {
+  content: "\e946";
+}
+
+.icon-Marine-receipt-plan:before {
+  content: "\e94c";
+}
+
+.icon-Marine-receipt-view:before {
+  content: "\e94d";
+}
+
+.icon-Marine-shipment-plan:before {
+  content: "\e94e";
+}
+
+.icon-Marine-view-shipment:before {
+  content: "\e94f";
+}
+
+.icon-MeterUnaccountedTransactions:before {
+  content: "\e950";
+}
+
+.icon-Pipeline-shippment:before {
+  content: "\e951";
+}
+
+.icon-PipelineSiteView:before {
+  content: "\e952";
+}
+
+.icon-Rail-dispatch-plan:before {
+  content: "\e953";
+}
+
+.icon-Rail-receipt-plan:before {
+  content: "\e954";
+}
+
+.icon-Rail-view-dispatch:before {
+  content: "\e955";
+}
+
+.icon-Rail-view-receipt:before {
+  content: "\e956";
+}
+
+.icon-SealMaster:before {
+  content: "\e957";
+}
+
+.icon-Shareholder:before {
+  content: "\e958";
+}
+
+.icon-StaffVisitor:before {
+  content: "\e959";
+}
+
+.icon-TankGroup:before {
+  content: "\e95a";
+}
+
+.icon-TankShareholderAssociation:before {
+  content: "\e95c";
+}
+
+.icon-TankUnaccountedTransactions:before {
+  content: "\e95d";
+}
+
+.icon-Tank:before {
+  content: "\e95e";
+}
+
+.icon-Terminal:before {
+  content: "\e95f";
+}
+
+.icon-UnmatchedTransactions:before {
+  content: "\e960";
+}
+
+.icon-accept:before {
+  content: "\e93a";
+}
+
+.icon-denied:before {
+  content: "\e93b";
+}
+
+.icon-Meter:before {
+  content: "\e938";
+}
+
+.icon-LoadingArm:before {
+  content: "\e939";
+}
+
+.icon-Bay:before {
+  content: "\e930";
+}
+
+.icon-BCU:before {
+  content: "\e931";
+}
+
+.icon-Berth:before {
+  content: "\e932";
+}
+
+.icon-Cluster:before {
+  content: "\e933";
+}
+
+.icon-GANTRY:before {
+  content: "\e936";
+}
+
+.icon-Spur:before {
+  content: "\e937";
+}
+
+.icon-ReportingOffice:before {
+  content: "\e9a4";
+}
+
+.icon-Weigh-Bridge:before {
+  content: "\e9a5";
+}
+
+.icon-Island:before {
+  content: "\e9a6";
+}
+
+.icon-CARD_READER:before {
+  content: "\e9a7";
+}
+
+.icon-SecurityUsers:before {
+  content: "\e901";
+}
+
+.icon-FinishedProduct:before {
+  content: "\e902";
+}
+
+.icon-TankMonitor:before {
+  content: "\e904";
+}
+
+.icon-Supplier:before {
+  content: "\e905";
+}
+
+.icon-OriginTerminal:before {
+  content: "\e906";
+}
+
+.icon-RailRouteConfig:before {
+  content: "\e909";
+}
+
+.icon-CarrierCompany:before {
+  content: "\e90a";
+}
+
+.icon-Driver:before {
+  content: "\e90b";
+}
+
+.icon-PrimeMover:before {
+  content: "\e90c";
+}
+
+.icon-Trailer:before {
+  content: "\e918";
+}
+
+.icon-Vehicle:before {
+  content: "\e919";
+}
+
+.icon-Vessel:before {
+  content: "\e90d";
+}
+
+.icon-RailWagon:before {
+  content: "\e90e";
+}
+
+.icon-Order:before {
+  content: "\e90f";
+}
+
+.icon-VehicleHSEInspection:before {
+  content: "\e910";
+}
+
+.icon-TruckShipmentByCompartment:before {
+  content: "\e911";
+}
+
+.icon-TruckShipmentByProduct:before {
+  content: "\e912";
+}
+
+.icon-TruckReciept:before {
+  content: "\e913";
+}
+
+.icon-MarineDispatch:before {
+  content: "\e914";
+}
+
+.icon-MarineReciept:before {
+  content: "\e915";
+}
+
+.icon-RailReciept:before {
+  content: "\e916";
+}
+
+.icon-RailDispatch:before {
+  content: "\e917";
+}
+
+.icon-PipelineDispatch:before {
+  content: "\e91a";
+}
+
+.icon-PipelineReciept:before {
+  content: "\e91b";
+}
+
+.icon-ViewTransloading:before {
+  content: "\e91c";
+}
+
+.icon-NotificationLog:before {
+  content: "\e91d";
+}
+
+.icon-ViewSystemStatus:before {
+  content: "\e9ca";
+}
+
+.icon-Contract:before {
+  content: "\e9cb";
+}
+
+.icon-Road:before {
+  content: "\e91e";
+}
+
+.icon-Rail:before {
+  content: "\e91f";
+}
+
+.icon-Pipeline:before {
+  content: "\e921";
+}
+
+.icon-Shipment:before {
+  content: "\e922";
+}
+
+.icon-Reciept:before {
+  content: "\e923";
+}
+
+.icon-Transactions:before {
+  content: "\e924";
+}
+
+.icon-Administration:before {
+  content: "\e925";
+}
+
+.icon-ProductInfo:before {
+  content: "\e926";
+}
+
+.icon-CompanyInfo:before {
+  content: "\e927";
+}
+
+.icon-CarrierDetails:before {
+  content: "\e928";
+}
+
+.icon-Home:before {
+  content: "\e929";
+}
+
+.icon-Live:before {
+  content: "\e9c0";
+}
+
+.icon-COA:before {
+  content: "\e9c5";
+}
+
+.icon-COAAssignment:before {
+  content: "\e9c8";
+}
+
+.icon-COAFinishProduct:before {
+  content: "\e9c3";
+}
+
+.icon-COAParameter:before {
+  content: "\e9c9";
+}
+
+.icon-COAParameterByCustomer:before {
+  content: "\e9c7";
+}
+
+.icon-COATankManagement:before {
+  content: "\e9c4"
+}
+
+.icon-COATemplate:before {
+  content: "\e9c6";
+}
+
+.icon-CustomerRecipe:before {
+  content: "\e9c1";
+}
+
+.icon-ProductDemandForecasting:before {
+  content: "\e903";
+}
+
+.icon-ProductForecastConfig:before {
+  content: "\e900";
+}
+
+.icon-BookInfo-view:before {
+  content: "\e9d0";
+}
