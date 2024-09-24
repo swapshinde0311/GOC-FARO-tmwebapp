@@ -26,7 +26,7 @@ import * as DateFieldsInEntities from "../../../JS/DateFieldsInEntities";
 import TMDetailsKPILayout from "../Common/TMDetailsKPILayout";
 import { kpiOrderDetail } from "../../../JS/KPIPageName";
 import UserAuthenticationLayout from "../Common/UserAuthentication";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import NotifyEvent from "../../../JS/NotifyEvent";
 
 class OrderDetailsComposite extends Component {
