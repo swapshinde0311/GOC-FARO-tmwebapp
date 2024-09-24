@@ -50,6 +50,7 @@ OrderDetails.propTypes = {
   compartmentDetailsPageSize: PropTypes.number.isRequired,
   handleForceClose: PropTypes.func.isRequired,
   handleViewShipments: PropTypes.func.isRequired,
+  printScheduleClick: PropTypes.func.isRequired,////#Swapnil GES-IND 20Sep24
   enableForceClose: PropTypes.bool.isRequired,
 };
 
@@ -91,6 +92,7 @@ export default function OrderDetails({
   isEnterpriseNode,
   handleForceClose,
   handleViewShipments,
+  printScheduleClick,////#Swapnil GES-IND 20Sep24
   enableForceClose
 }) {
   const [t] = useTranslation();
@@ -142,17 +144,17 @@ export default function OrderDetails({
           reserveSpace={false}
         />
       ) : attribute.DataType.toLowerCase() ===
-          Constants.DataType.FLOAT.toLowerCase() ||
+        Constants.DataType.FLOAT.toLowerCase() ||
         attribute.DataType.toLowerCase() ===
-          Constants.DataType.LONG.toLowerCase() ||
+        Constants.DataType.LONG.toLowerCase() ||
         attribute.DataType.toLowerCase() ===
-          Constants.DataType.DOUBLE.toLowerCase() ? (
+        Constants.DataType.DOUBLE.toLowerCase() ? (
         <Input
           fluid
           value={
             attribute.AttributeValue === null ||
-            attribute.AttributeValue === undefined ||
-            attribute.AttributeValue === ""
+              attribute.AttributeValue === undefined ||
+              attribute.AttributeValue === ""
               ? ""
               : attribute.AttributeValue.toLocaleString()
           }
@@ -177,8 +179,8 @@ export default function OrderDetails({
           fluid
           value={
             attribute.AttributeValue === null ||
-            attribute.AttributeValue === undefined ||
-            attribute.AttributeValue === ""
+              attribute.AttributeValue === undefined ||
+              attribute.AttributeValue === ""
               ? ""
               : handleAttributeDateValue(attribute.AttributeValue)
           }
@@ -263,7 +265,7 @@ export default function OrderDetails({
             renderer={handleAttributeType}
           />
           {Array.isArray(data.AttributesforUI) &&
-          data.AttributesforUI.length > compartmentDetailsPageSize ? (
+            data.AttributesforUI.length > compartmentDetailsPageSize ? (
             <DataTable.Pagination />
           ) : (
             ""
@@ -291,8 +293,8 @@ export default function OrderDetails({
         value={val}
         onChange={(value) => handleCellDataEdit(value, cellData)}
         reserveSpace={false}
-        // error={t(validationErrors.Description)}
-        // disabled={cellData.field === "Code" ? true : false}
+      // error={t(validationErrors.Description)}
+      // disabled={cellData.field === "Code" ? true : false}
       />
       //   )}
       // </TranslationConsumer>
@@ -324,6 +326,34 @@ export default function OrderDetails({
       />
     );
   };
+
+  ////#Swapnil GES-IND 17Sep24
+  const handleDateEdit = (cellData) => {
+    let val = modOrderItems[cellData.rowIndex][cellData.field];
+    return (
+      // <TranslationConsumer>
+      //   {(t) => (
+      <DatePicker
+        fluid
+        value={val === null ? "" : new Date(val)}
+        //label={t(`ContractInfo_StartDate`)}
+        showYearSelector="true"
+        // indicator="required"
+        // disablePast={true}
+        //type="datetime"
+        displayFormat={getCurrentDateFormat()}
+        onChange={(value) => handleCellDataEdit(value, cellData)}
+        onTextChange={(value, error) => {
+          handleCellDataEdit(value, cellData);
+        }}
+        // error={t(validationErrors.StartDate)}
+        reserveSpace={false}
+      />
+      //   )}
+      // </TranslationConsumer>
+    );
+  };
+////End
 
   return (
     // <TranslationConsumer>
@@ -377,8 +407,8 @@ export default function OrderDetails({
               modOrder.OrderStartDate === null
                 ? ""
                 : Utilities.convertStringToCommonDateFormat(
-                    modOrder.OrderStartDate
-                  )
+                  modOrder.OrderStartDate
+                )
             }
             displayFormat={getCurrentDateFormat()}
             //type="datetime"
@@ -401,8 +431,8 @@ export default function OrderDetails({
               modOrder.OrderEndDate === null
                 ? ""
                 : Utilities.convertStringToCommonDateFormat(
-                    modOrder.OrderEndDate
-                  )
+                  modOrder.OrderEndDate
+                )
             }
             displayFormat={getCurrentDateFormat()}
             label={t(`ShipmentOrder_EndDate`)}
@@ -424,7 +454,7 @@ export default function OrderDetails({
             fluid
             value={
               getKeyByValue(Constants.orderStatus, modOrder.OrderStatus) ===
-              undefined
+                undefined
                 ? ""
                 : getKeyByValue(Constants.orderStatus, modOrder.OrderStatus)
             }
@@ -514,28 +544,28 @@ export default function OrderDetails({
       </div>
       {modAttributeMetaDataList.length > 0
         ? modAttributeMetaDataList.map((attire) => (
-            <ErrorBoundary>
-              <Accordion>
-                <Accordion.Content
-                  className="attributeAccordian"
-                  title={
-                    isEnterpriseNode
-                      ? attire.TerminalCode + " - " + t("Attributes_Header")
-                      : t("Attributes_Header")
-                  }
-                >
-                  <AttributeDetails
-                    selectedAttributeList={attire.attributeMetaDataList}
-                    handleCellDataEdit={onAttributeDataChange}
-                    attributeValidationErrors={handleValidationErrorFilter(
-                      attributeValidationErrors,
-                      attire.TerminalCode
-                    )}
-                  ></AttributeDetails>
-                </Accordion.Content>
-              </Accordion>
-            </ErrorBoundary>
-          ))
+          <ErrorBoundary>
+            <Accordion>
+              <Accordion.Content
+                className="attributeAccordian"
+                title={
+                  isEnterpriseNode
+                    ? attire.TerminalCode + " - " + t("Attributes_Header")
+                    : t("Attributes_Header")
+                }
+              >
+                <AttributeDetails
+                  selectedAttributeList={attire.attributeMetaDataList}
+                  handleCellDataEdit={onAttributeDataChange}
+                  attributeValidationErrors={handleValidationErrorFilter(
+                    attributeValidationErrors,
+                    attire.TerminalCode
+                  )}
+                ></AttributeDetails>
+              </Accordion.Content>
+            </Accordion>
+          </ErrorBoundary>
+        ))
         : null}
       <div className="row compartmentRow">
         <div className="col col-md-8 col-lg-9 col col-xl-9">
@@ -619,6 +649,25 @@ export default function OrderDetails({
               customEditRenderer={handleDropdownEdit}
             ></DataTable.Column>
 
+            {/* #Swapnil GES-IND 17Sep24 */}
+            <DataTable.Column
+              className="compColHeight colminWidth"
+              key="ScheduledDate"
+              field="ScheduledDate"
+              header={handleIsRequiredCompartmentCell(t("Scheduled Date"))}
+              // header={t("ContractInfo_StartDate")}
+              // rowHeader={true}
+              editable={true}
+              editFieldType="text"
+              renderer={(cellData) =>
+                cellData.value === null
+                  ? ""
+                  : cellData.value
+              }
+              customEditRenderer={handleDateEdit}
+            ></DataTable.Column>
+            {/* #End */}
+
             <DataTable.Column
               className="compColHeight disabledColumn colminWidth"
               key="BlockedQuantity"
@@ -672,8 +721,8 @@ export default function OrderDetails({
             content={t("ShipmentOrder_BtnForceClose")}
             disabled={
               order.OrderCode === "" ||
-              modOrder.OrderStatus === Constants.orderStatus.CLOSED ||
-              modOrder.OrderStatus === Constants.orderStatus.FULLY_DELIVERED||!enableForceClose
+                modOrder.OrderStatus === Constants.orderStatus.CLOSED ||
+                modOrder.OrderStatus === Constants.orderStatus.FULLY_DELIVERED || !enableForceClose
                 ? true
                 : false
             }
@@ -685,6 +734,13 @@ export default function OrderDetails({
               // disabled={order.OrderCode === "" || modOrder.OrderStatus === Constants.orderStatus.CLOSED
               //   || modOrder.OrderStatus === Constants.orderStatus.FULLY_DELIVERED ? true : false}
               onClick={handleViewShipments}
+            ></Button>
+          ) : null}
+
+          {order.OrderCode !== "" ? (
+            <Button
+              content={t("Print Schedule")}
+              onClick={printScheduleClick}
             ></Button>
           ) : null}
         </div>

@@ -1276,6 +1276,7 @@ class TruckShipmentComposite extends Component {
   };
 
   printFANClick = () => {
+    console.log(`printFANClick called...`);
     let showFANAuthenticationLayout =
       this.props.userDetails.EntityResult.IsWebPortalUser !== true
         ? true
@@ -1289,6 +1290,7 @@ class TruckShipmentComposite extends Component {
   };
 
   printFAN = () => {
+    console.log(`printFAN called...`);
     this.handleAuthenticationClose();
     let shipment = lodash.cloneDeep(this.state.shipment);
 
@@ -1306,6 +1308,7 @@ class TruckShipmentComposite extends Component {
     };
 
     this.handlePrintFAN(
+      
       shipment.ShipmentCode,
       this.state.selectedShareholder,
       this.props.tokenDetails.tokenInfo,
@@ -1380,6 +1383,7 @@ class TruckShipmentComposite extends Component {
   };
 
   handlePrintFAN(shipmentCode, shCode, token, callback) {
+    console.log(`handlePrintFAN called...`);
     var keyCode = [
       {
         key: KeyCodes.shareholderCode,

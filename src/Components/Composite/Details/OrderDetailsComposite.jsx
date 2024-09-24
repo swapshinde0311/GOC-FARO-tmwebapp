@@ -26,6 +26,9 @@ import * as DateFieldsInEntities from "../../../JS/DateFieldsInEntities";
 import TMDetailsKPILayout from "../Common/TMDetailsKPILayout";
 import { kpiOrderDetail } from "../../../JS/KPIPageName";
 import UserAuthenticationLayout from "../Common/UserAuthentication";
+import { ToastContainer, toast } from "react-toastify";
+import NotifyEvent from "../../../JS/NotifyEvent";
+
 class OrderDetailsComposite extends Component {
   state = {
     order: {},
@@ -48,7 +51,7 @@ class OrderDetailsComposite extends Component {
     isShowTruckShipment: false,
     isShowBackButton: false,
     orderKPIList: [],
-    enableForceClose:false,
+    enableForceClose: false,
     showAuthenticationLayout: false,
     showForceCloseAuthenticationLayout: false,
     tempOrder: {},
@@ -299,16 +302,32 @@ class OrderDetailsComposite extends Component {
   };
 
   handleCellDataEdit = (newVal, cellData) => {
+    console.log(`handleCellDataEdit() called... newVal: ${JSON.stringify(newVal)}, cellData: ${JSON.stringify(cellData)}`);
     let modOrderItems = lodash.cloneDeep(this.state.modOrderItems);
+    console.log(`handleCellDataEdit() modOrderItems: ${JSON.stringify(modOrderItems)}`);
+    // modOrderItems[cellData.rowIndex][cellData.field] = newVal; ////#Swapnil GES-IND 17Sep24
 
-    modOrderItems[cellData.rowIndex][cellData.field] = newVal;
+    ////#Swapnil GES-IND 17Sep24
+    if (cellData.field !== 'ScheduledDate') {
+      modOrderItems[cellData.rowIndex][cellData.field] = newVal;
+    } else {
+      const date = new Date(newVal);
+      const datePart = date.toISOString().split('T')[0];
+      modOrderItems[cellData.rowIndex][cellData.field] = datePart;
+    }
+    ////End
 
-    this.setState({ modOrderItems });
+    console.log(`handleCellDataEdit() modOrderItems: ${JSON.stringify(modOrderItems)}`);
+    this.setState({ modOrderItems, });
+    console.log(`handleCellDataEdit() this.state.modOrderItems: ${JSON.stringify(this.state.modOrderItems)}`);
   };
 
   handleAddPlan = () => {
     if (!this.props.userDetails.EntityResult.IsArchived) {
       try {
+        const date = new Date();
+        const datePart = date.toISOString().split('T')[0];
+
         let newPlan = {
           // primaryKey: null,
           Attributes: [],
@@ -325,13 +344,19 @@ class OrderDetailsComposite extends Component {
               .DefaultQtyUOMForTransactionUI.ROAD,
           RemainingQuantity: null,
           ShareholderCode: null,
+
+          ////#Swapnil GES-IND 17Sep24
+          
+          ScheduledDate:datePart, //Utilities.convertStringToCommonDateFormat(new Date()),
+          ////End
         };
         let modOrderItems = lodash.cloneDeep(this.state.modOrderItems);
+        console.log(`handleAddPlan() after lodash modOrderItems:${JSON.stringify(modOrderItems)}`);
 
-        newPlan.SeqNumber =
-          Utilities.getMaxSeqNumberfromListObject(modOrderItems);
+        newPlan.SeqNumber = Utilities.getMaxSeqNumberfromListObject(modOrderItems);
 
         modOrderItems.push(newPlan);
+        console.log(`handleAddPlan() after seqNumber modOrderItems:${JSON.stringify(modOrderItems)}`);
 
         this.setState(
           {
@@ -399,6 +424,7 @@ class OrderDetailsComposite extends Component {
   };
 
   getOrder(isNewOrder) {
+    console.log(`getOrder() called... isNewOrder: ${isNewOrder}`);
     if (isNewOrder) {
       //this.terminalOptions = [];
       emptyOrder.OrderStartDate = new Date();
@@ -457,6 +483,8 @@ class OrderDetailsComposite extends Component {
         let result = response.data;
 
         if (result.IsSuccess === true) {
+          console.log(`getOrder() called...1 result.EntityResult: ${JSON.stringify(result.EntityResult)}`);
+
           let modOrderItems = [];
           if (
             result.EntityResult !== null &&
@@ -467,6 +495,7 @@ class OrderDetailsComposite extends Component {
               lodash.cloneDeep(result.EntityResult.OrderItems)
             );
           }
+          console.log(`getOrder() called...2 result.EntityResult: ${JSON.stringify(result.EntityResult)}`);
           this.setState(
             {
               isReadyToRender: true,
@@ -489,7 +518,7 @@ class OrderDetailsComposite extends Component {
                 fnOrder
               ),
             },
-           
+
             () => {
               this.getKPIList(this.props.selectedShareholder, result.EntityResult.OrderCode)
               if (this.props.userDetails.EntityResult.IsEnterpriseNode) {
@@ -612,6 +641,7 @@ class OrderDetailsComposite extends Component {
   }
 
   formCompartmentAttributes(selectedTerminals) {
+    console.log(`formCompartmentAttributes() called... selectedTerminals: ${JSON.stringify(selectedTerminals)}`);
     try {
       let attributes = lodash.cloneDeep(
         this.state.compartmentAttributeMetaDataList
@@ -623,9 +653,11 @@ class OrderDetailsComposite extends Component {
         });
       });
       let modOrderItems = lodash.cloneDeep(this.state.modOrderItems);
+      console.log(`formCompartmentAttributes() modOrderItems: ${JSON.stringify(modOrderItems)}`);
 
       modOrderItems.forEach((comp) => {
         let compAttributes = [];
+        comp.ScheduledDate = "";
         attributes.forEach((att) => {
           att.attributeMetaDataList.forEach((attribute) => {
             compAttributes.push({
@@ -695,9 +727,13 @@ class OrderDetailsComposite extends Component {
                     item.TerminalCode === att.TerminalCode &&
                     item.AttributeCode === attData.AttributeCode
                 );
-                if (tempAttIndex >= 0)
-                  tempCompAttributes[tempAttIndex].AttributeValue =
-                    attData.AttributeValue;
+                if (tempAttIndex >= 0) {
+                  tempCompAttributes[tempAttIndex].AttributeValue = attData.AttributeValue;
+
+                  ////#Swapnil GES-IND 19Sep24
+                  comp.ScheduledDate = attData.AttributeValue;
+                  ////End
+                }
               });
             });
             tempCompAttributes.forEach((assignedAttributes) => {
@@ -720,6 +756,7 @@ class OrderDetailsComposite extends Component {
           comp.AttributesforUI
         );
       });
+      console.log(`formCompartmentAttributes() before save state modOrderItems: ${JSON.stringify(modOrderItems)}`);
       this.setState({ modOrderItems });
     } catch (error) {
       console.log(
@@ -841,6 +878,7 @@ class OrderDetailsComposite extends Component {
   };
 
   handleAttributeDataChange = (attribute, value) => {
+    console.log(`handleAttributeDataChange() called... attribute: ${JSON.stringify(attribute)} value: ${value}`);
     try {
       let matchedAttributes = [];
       let modAttributeMetaDataList = lodash.cloneDeep(
@@ -926,14 +964,20 @@ class OrderDetailsComposite extends Component {
           if (plan.Quantity !== null && plan.Quantity !== "")
             plan.Quantity = plan.Quantity.toLocaleString();
           delete plan.SeqNumber;
-          if (
-            plan.AttributesforUI !== undefined &&
-            plan.AttributesforUI != null
-          )
-            plan.AttributesforUI =
-              Utilities.compartmentAttributesConverttoLocaleString(
-                plan.AttributesforUI
-              );
+
+          if (plan.AttributesforUI !== undefined && plan.AttributesforUI != null) {
+            ////#Swapnil GES-IND 18Sep24
+            plan.AttributesforUI.forEach((item) => {
+              if (item.AttributeCode === 'ScheduledDate') {
+                const date = new Date(plan.ScheduledDate);
+                const datePart = date.toISOString().split('T')[0];
+                console.log(`datePart: ${datePart}`);
+                item.AttributeValue = datePart;
+              }
+            });
+            ////End
+            plan.AttributesforUI = Utilities.compartmentAttributesConverttoLocaleString(plan.AttributesforUI);
+          }
         });
       }
       return modOrder;
@@ -960,16 +1004,17 @@ class OrderDetailsComposite extends Component {
       let tempOrder = lodash.cloneDeep(this.state.tempOrder);
 
       this.state.order.OrderCode === ""
-      ? this.createOrder(tempOrder)
-      : this.updateOrder(tempOrder);
+        ? this.createOrder(tempOrder)
+        : this.updateOrder(tempOrder);
     } catch (error) {
       console.log("Order Composite : Error in addUpdateOrder");
     }
   };
 
-  
+
 
   handleSave = () => {
+    console.log(`handleSave() called...`);
     try {
       let returnValue = Object.values(this.state.validationErrors).every(
         function (value) {
@@ -977,11 +1022,14 @@ class OrderDetailsComposite extends Component {
         }
       );
       if (returnValue) {
-       // this.setState({ saveEnabled: false });
+        // this.setState({ saveEnabled: false });
         let modOrder = this.fillDetails();
+        console.log(`handleSave() modOrder:${JSON.stringify(modOrder)}`);
+
         let attributeList = Utilities.attributesConverttoLocaleString(
           this.state.modAttributeMetaDataList
         );
+        console.log(`handleSave() attributeList:${JSON.stringify(attributeList)}`);
 
         if (this.validateSave(modOrder, attributeList)) {
           modOrder = this.convertStringtoDecimal(modOrder, attributeList);
@@ -990,9 +1038,9 @@ class OrderDetailsComposite extends Component {
             DateFieldsInEntities.DatesInEntity.Order,
             modOrder
           );
-          
 
-            let showAuthenticationLayout =
+
+          let showAuthenticationLayout =
             this.props.userDetails.EntityResult.IsWebPortalUser !== true
               ? true
               : false;
@@ -1001,7 +1049,7 @@ class OrderDetailsComposite extends Component {
             if (showAuthenticationLayout === false) {
               this.addUpdateOrder();
             }
-        });
+          });
 
 
           modOrder = Utilities.convertStringToDates(
@@ -1206,7 +1254,7 @@ class OrderDetailsComposite extends Component {
   forceCloseOperation = () => {
 
     let modOrder = lodash.cloneDeep(this.state.tempOrder);
-    
+
     let keyCode = [
       {
         key: KeyCodes.orderCode,
@@ -1277,15 +1325,15 @@ class OrderDetailsComposite extends Component {
     } else {
 
       let showForceCloseAuthenticationLayout =
-      this.props.userDetails.EntityResult.IsWebPortalUser !== true
-        ? true
-        : false;
-    let tempOrder = lodash.cloneDeep(modOrder);
-    this.setState({ showForceCloseAuthenticationLayout, tempOrder }, () => {
-      if (showForceCloseAuthenticationLayout === false) {
-        this.forceCloseOperation();
-      }
-  });
+        this.props.userDetails.EntityResult.IsWebPortalUser !== true
+          ? true
+          : false;
+      let tempOrder = lodash.cloneDeep(modOrder);
+      this.setState({ showForceCloseAuthenticationLayout, tempOrder }, () => {
+        if (showForceCloseAuthenticationLayout === false) {
+          this.forceCloseOperation();
+        }
+      });
     }
   };
 
@@ -1517,11 +1565,11 @@ class OrderDetailsComposite extends Component {
       return this.addUpdateOrder;
     else if (this.state.showForceCloseAuthenticationLayout)
       return this.forceCloseOperation;
-    
+
   }
 
   getFunctionGroupName() {
-     if (this.state.showForceCloseAuthenticationLayout)
+    if (this.state.showForceCloseAuthenticationLayout)
       return fnOrderForceClose;
     else if (this.state.showAuthenticationLayout)
       return fnOrder;
@@ -1533,7 +1581,88 @@ class OrderDetailsComposite extends Component {
       showForceCloseAuthenticationLayout: false,
     });
   };
-  
+
+  ////#Swapnil GES-IND 20Sep24
+  printScheduleClick = () => {
+    console.log(`printScheduleClick called...`);
+    this.printSchedule();
+  };
+
+  printSchedule = () => {
+    console.log(`printSchedule() called...`);
+    let order = lodash.cloneDeep(this.state.order);
+    console.log(`printSchedule() order: ${JSON.stringify(order)}`);
+    let notification = {
+      messageType: "critical",
+      message: "ViewOrderStatus_PrintScheduleStatus",
+      messageResultDetails: [
+        {
+          keyFields: ["Order"],
+          keyValues: [order.OrderCode],
+          isSuccess: false,
+          errorMessage: "",
+        },
+      ],
+    };
+
+    this.handlePrintSchedule(
+      order.OrderCode,
+      this.props.selectedShareholder,
+      this.props.tokenDetails.tokenInfo,
+      (result) => {
+        notification.messageType = result.IsSuccess ? "success" : "critical";
+        notification.messageResultDetails[0].isSuccess = result.IsSuccess;
+        notification.messageResultDetails[0].errorMessage = result.ErrorList[0];
+
+        toast(
+          <ErrorBoundary>
+            <NotifyEvent notificationMessage={notification}></NotifyEvent>
+          </ErrorBoundary>,
+          {
+            autoClose: notification.messageType === "success" ? 10000 : false,
+          }
+        );
+      }
+    );
+  };
+
+  handlePrintSchedule(orderCode, shCode, token, callback) {
+    console.log(`handlePrintSchedule() called... orderCode: ${orderCode} shCode: ${shCode}`);
+    var keyCode = [
+      {
+        key: KeyCodes.shareholderCode,
+        value: shCode,
+      },
+      {
+        key: KeyCodes.OperationName,
+        value: 'PRINT_ORDER_SCHEDULE',
+      },
+    ];
+    var input = { ShareholderCode: shCode, OrderCode: orderCode };
+    console.log(`handlePrintSchedule() input: ${JSON.stringify(input)}`);
+    var obj = {
+      ShareHolderCode: shCode,
+      keyDataCode: KeyCodes.shipmentCode,
+      KeyCodes: keyCode,
+      Input: input,
+    };
+
+    axios(
+      RestAPIs.ProjectPost,
+      Utilities.getAuthenticationObjectforPost(obj, token)
+    )
+      .then((response) => {
+
+        var result = response.data;
+        console.log(`handlePrintSchedule() result: ${JSON.stringify(result)}`);
+        callback(result);
+      })
+      .catch((error) => {
+        console.log("Error while handlePrintSchedule:", error);
+      });
+  }
+  ////End
+
   render() {
     let listOptions = {
       terminalCodes: this.state.terminalOptions,
@@ -1633,8 +1762,10 @@ class OrderDetailsComposite extends Component {
                     .WebPortalListPageSize
                 }
                 handleForceClose={this.handleForceClose}
-                  handleViewShipments={this.handleViewShipments}
-                  enableForceClose={this.state.enableForceClose}
+                handleViewShipments={this.handleViewShipments}
+                enableForceClose={this.state.enableForceClose}
+
+                printScheduleClick={this.printScheduleClick}  ////#Swapnil GES-IND 20Sep24
               ></OrderDetails>
             </ErrorBoundary></>
         )}
@@ -1665,11 +1796,11 @@ class OrderDetailsComposite extends Component {
           </ErrorBoundary>
         )}
 
-      {this.state.showAuthenticationLayout || this.state.showForceCloseAuthenticationLayout ? (
+        {this.state.showAuthenticationLayout || this.state.showForceCloseAuthenticationLayout ? (
           <UserAuthenticationLayout
             Username={this.props.userDetails.EntityResult.UserName}
             functionName={
-              this.state.order.OrderCode   === ""
+              this.state.order.OrderCode === ""
                 ? functionGroups.add
                 : functionGroups.modify
             }

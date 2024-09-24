@@ -584,34 +584,34 @@ class OrderComposite extends Component {
     }
   };
 
- 
+
 
   handleAuthenticationClose = () => {
-    
+
     this.setState({
       showDeleteAuthenticationLayout: false,
     });
   };
 
-  
-  getFunctionGroupName() {
-    if(this.state.showDeleteAuthenticationLayout )
-      return fnOrder
-   };
 
-   getDeleteorEditMode() {
-    if(this.state.showDeleteAuthenticationLayout)
+  getFunctionGroupName() {
+    if (this.state.showDeleteAuthenticationLayout)
+      return fnOrder
+  };
+
+  getDeleteorEditMode() {
+    if (this.state.showDeleteAuthenticationLayout)
       return functionGroups.remove;
     else
       return functionGroups.modify;
-   };
+  };
 
-   handleOperation()  {
-  
-    if(this.state.showDeleteAuthenticationLayout)
+  handleOperation() {
+
+    if (this.state.showDeleteAuthenticationLayout)
       return this.handleDelete
-    
- };
+
+  };
 
   render() {
     let isOrdersSelected = this.state.selectedItems.length > 0;
@@ -734,17 +734,17 @@ class OrderComposite extends Component {
             )}
           </>
         )}
-
-        {this.state.showDeleteAuthenticationLayout  
+        
+        {this.state.showDeleteAuthenticationLayout
           ? (
-          <UserAuthenticationLayout
-            Username={this.props.userDetails.EntityResult.UserName}
-            functionName={this.getDeleteorEditMode()}
-            functionGroup={this.getFunctionGroupName()}
-            handleClose={this.handleAuthenticationClose}
-            handleOperation={this.handleOperation()}
-          ></UserAuthenticationLayout>
-        ) : null}
+            <UserAuthenticationLayout
+              Username={this.props.userDetails.EntityResult.UserName}
+              functionName={this.getDeleteorEditMode()}
+              functionGroup={this.getFunctionGroupName()}
+              handleClose={this.handleAuthenticationClose}
+              handleOperation={this.handleOperation()}
+            ></UserAuthenticationLayout>
+          ) : null}
 
         <ErrorBoundary>
           <ToastContainer
